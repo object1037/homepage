@@ -10,7 +10,7 @@ module.exports = {
     borderRadius: {
       'full': '9999px',
     },
-    textColor: {
+    colors: {
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
@@ -24,6 +24,7 @@ module.exports = {
       purple: colors.purple,
       pink: colors.pink,
       twitter: '#1DA1F2',
+      ppink: '#ff0f53',
     },
     extend: {},
   },

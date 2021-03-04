@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.circle {
+  border-width: 2rem;
+  animation: animation 5s linear infinite;
+}
+@keyframes animation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+.bar {
+  width: 22rem;
+  position: relative;
+  top: calc(50% - 0.75rem);
+  left: calc(0% - 3rem);
+}
+.triangle {
+  border-bottom: solid 1.5rem #ff0f53;
+  border-left: solid 0.5rem transparent;
+  border-right: solid 3rem transparent;
+  position: relative;
+  top: calc(50% - 2.25rem);
+  left: calc(1.25rem);
+}
+.triangle2 {
+  border-top: solid 1.5rem #ff0f53;
+  border-right: solid 0.5rem transparent;
+  border-left: solid 3rem transparent;
+  position: relative;
+  top: calc(50% - 0.75rem);
+  left: calc(100% - 4.75rem);
+}
+.errorCode {
+  width: 20rem;
+  text-align: center;
+  font-size: 6rem;
+  color: #000;
+  position: absolute;
+  top: calc(10rem);
+  left: calc(50% - 10rem);
+  font-family: 'Comfortaa', cursive;
+}
+.errorSentence {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 3rem;
+}
