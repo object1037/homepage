@@ -16,7 +16,7 @@ export default function Custom404() {
       </div>
       <div className="errorCode dark:text-ppink">404</div>
       <div className="errorSentence dark:text-gray-100">
-        not found <Link href="/"><a><FontAwesomeIcon icon={faArrowCircleRight} /></a></Link>
+        not found <Link href="/" className="w-8 h-8"><a><FontAwesomeIcon icon={faArrowCircleRight} /></a></Link>
       </div>
     </wrapper>
     </>
