@@ -21,10 +21,10 @@ export default function Home() {
       </div>
       <h1 className="font-sans font-bold text-center text-4xl m-2">object_1037</h1>
     </div>
-    <footer className="absolute bottom-0 inset-x-0 bg-gray-600 h-44 md:h-20">
-      <div className="flex flex-col md:flex-row items-center pt-6 md:pl-10 space-y-6 md:space-y-0">
-        <Account account="Twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
-        <Account account="GitHub" link="https://github.com/object1037" hover="hover:text-gray-300" />
+    <footer className="absolute bottom-0 inset-x-0 bg-gray-600 h-24 md:h-20">
+      <div className="flex flex-row items-center pl-10 space-x-8 space-y-0 pt-6">
+        <Account account="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
+        <Account account="github" link="https://github.com/object1037" hover="hover:text-gray-300" />
       </div>
       <span className="text-gray-400 font-light text-xs absolute bottom-4 inset-x-0 text-center">&copy; 2021 object_1037</span>
     </footer>
