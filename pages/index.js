@@ -10,6 +10,8 @@ export default function Home() {
       <Head>
         <title>object_1037</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@object_1037" />
       </Head>
       <div className="justify-center object-none flex-shrink flex items-center mb-2 mt-8">
         <div className="flex justify-center content-center rounded-full shadow-xl">
@@ -18,12 +20,12 @@ export default function Home() {
       </div>
       <h1 className="font-sans font-bold text-center text-4xl m-2">object_1037</h1>
     </div>
-    <footer className="absolute bottom-0 inset-x-0 flex flex-row items-center bg-gray-600 h-20">
+    <footer className="space-x-6 absolute bottom-0 inset-x-0 flex flex-row items-center bg-gray-600 h-20">
       <Link href="https://twitter.com/object_1037">
-         <a className="w-10 h-10 mx-6 text-white hover:text-twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+         <a className="w-10 h-10 ml-6 text-white hover:text-twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
       </Link>
       <Link href="https://github.com/object1037">
-        <a className="w-10 h-10 mx-6 text-white hover:text-gray-300"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+        <a className="w-10 h-10 text-white hover:text-gray-300"><FontAwesomeIcon icon={['fab', 'github']} /></a>
       </Link>
     </footer>
     </>
