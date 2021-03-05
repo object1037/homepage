@@ -12,14 +12,14 @@ export default function Home() {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@object_1037" />
     </Head>
-    <section className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10">
-      <div className="mt-8 flex rounded-full shadow-xl">
-        <Image priority src="/images/profile.jpg" alt="my profile picture" width="150" height="150" className="rounded-full" /> 
+    <section className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-10 bg-gray-100 dark:bg-gray-800 py-8">
+      <div className="flex rounded-full shadow-xl">
+        <Image priority src="/images/profile.jpg" alt="my profile picture" width="200" height="200" className="rounded-full" /> 
       </div>
-      <h1 className="font-sans font-bold text-4xl m-2">object_1037</h1>
+      <h1 className="font-sans font-bold text-4xl m-2 text-gray-900 dark:text-gray-100 min-h-full">object_1037</h1>
     </section>
-    <section className="flex flex-col mt-12">
-      <h1 className="font-sans text-3xl text-center">Profile</h1>
+    <section className="flex flex-col py-12">
+      <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100">Profile</h1>
       <table className="table-fixed mx-auto border-collapse mt-8 text-base">
         <thead>
           <tr>
@@ -30,8 +30,13 @@ export default function Home() {
         <tbody>
           <Row name="誕生日" value="2002年4月9日" />
           <Row name="好きなもの" value="VTuber" />
+          <Row name="居住地" value="大阪" />
         </tbody>
       </table>
+    </section>
+    <section className="flex flex-col">
+      <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100">Skills</h1>
+      
     </section>
     <footer className="bg-gray-600 h-20 relative w-screen mt-20">
       <div className="flex flex-row items-center pl-4">
