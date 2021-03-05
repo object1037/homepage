@@ -7,9 +7,6 @@ module.exports = {
     container: {
       center: true,
     },
-    borderRadius: {
-      'full': '9999px',
-    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

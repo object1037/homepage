@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Account from '../components/accounts'
 import Row from '../components/tablerow'
+import Skill from '../components/skills'
 
 export default function Home() {
   return (
@@ -35,8 +36,14 @@ export default function Home() {
       </table>
     </section>
     <section className="flex flex-col">
-      <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100">Skills</h1>
-      
+      <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Skills</h1>
+      <div className="flex flex-row flex-wrap justify-center">
+        <Skill name="JavaScript" description="できません" icon="js" />
+        <Skill name="HTML" description="できません" icon="html5" />
+        <Skill name="CSS" description="できません" icon="css3-alt" />
+        <Skill name="React" description="できません" icon="react" />
+        <Skill name="Git" description="できません" icon="git-alt" />
+      </div>
     </section>
     <footer className="bg-gray-600 h-20 relative w-screen mt-20">
       <div className="flex flex-row items-center pl-4">
