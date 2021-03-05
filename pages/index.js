@@ -22,7 +22,7 @@ export default function Home() {
       <h1 className="font-sans font-bold text-center text-4xl m-2">object_1037</h1>
     </div>
     <footer className="absolute bottom-0 inset-x-0 bg-gray-600 h-24 md:h-20">
-      <div className="flex flex-row items-center pl-10 space-x-8 space-y-0 pt-6">
+      <div className="flex flex-row items-center space-y-0 pl-4">
         <Account account="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
         <Account account="github" link="https://github.com/object1037" hover="hover:text-gray-300" />
       </div>
