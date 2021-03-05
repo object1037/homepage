@@ -21,12 +21,12 @@ export default function Home() {
       </div>
       <h1 className="font-sans font-bold text-center text-4xl m-2">object_1037</h1>
     </div>
-    <footer className="absolute bottom-0 inset-x-0 bg-gray-600 h-24 md:h-20">
+    <footer className="absolute bottom-0 inset-x-0 bg-gray-600 h-20">
       <div className="flex flex-row items-center space-y-0 pl-4">
         <Account account="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
         <Account account="github" link="https://github.com/object1037" hover="hover:text-gray-300" />
       </div>
-      <span className="text-gray-400 font-light text-xs absolute bottom-4 inset-x-0 text-center">&copy; 2021 object_1037</span>
+      <span className="text-gray-400 font-light text-xs absolute bottom-8 md:bottom-4 inset-x-0 text-right md:text-center mr-8 md:mr-0">&copy; 2021 object_1037</span>
     </footer>
     </>
   )
