@@ -45,12 +45,10 @@ export default function Home() {
         <Skill name="Git" description="できません" icon="git-alt" />
       </div>
     </section>
-    <footer className="bg-gray-600 h-20 relative w-screen mt-20">
-      <div className="flex flex-row items-center pl-4">
+    <footer className="flex flex-row items-center pl-4 bg-gray-600 h-20 relative w-screen mt-20">
         <Account account="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
         <Account account="github" link="https://github.com/object1037" hover="hover:text-gray-300" />
-      </div>
-      <span className="absolute w-screen bottom-8 text-gray-400 font-light text-xs text-right md:text-center pr-8 md:pr-0">&copy; 2021 object_1037</span>
+      <div className="absolute right-8 text-gray-400 font-light text-xs">&copy; 2021 object_1037</div>
     </footer>
     </>
   )
