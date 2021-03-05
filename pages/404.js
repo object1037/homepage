@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
+
 export default function Custom404() {
   return (
     <>
@@ -11,7 +15,9 @@ export default function Custom404() {
         </div>
       </div>
       <div className="errorCode dark:text-ppink">404</div>
-      <div className="errorSentence dark:text-gray-100">not found</div>
+      <div className="errorSentence dark:text-gray-100">
+        not found <Link href="/"><a><FontAwesomeIcon icon={faArrowCircleRight} /></a></Link>
+      </div>
     </wrapper>
     </>
   )
