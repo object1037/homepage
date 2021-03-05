@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import Account from '../components/accounts'
 
 export default function Home() {
   return (
@@ -20,13 +21,9 @@ export default function Home() {
       </div>
       <h1 className="font-sans font-bold text-center text-4xl m-2">object_1037</h1>
     </div>
-    <footer className="space-x-6 absolute bottom-0 inset-x-0 flex flex-row items-center bg-gray-600 h-20">
-      <Link href="https://twitter.com/object_1037">
-         <a className="w-10 h-10 ml-6 text-white hover:text-twitter"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-      </Link>
-      <Link href="https://github.com/object1037">
-        <a className="w-10 h-10 text-white hover:text-gray-300"><FontAwesomeIcon icon={['fab', 'github']} /></a>
-      </Link>
+    <footer className="space-y-6 absolute bottom-0 inset-x-0 flex flex-col items-center bg-gray-600 h-60">
+      <Account account="Twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
+      <Account account="GitHub" link="https://github.com/object1037" hover="hover:text-gray-300" />
     </footer>
     </>
   )
