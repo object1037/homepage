@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <h1 className="font-sans font-bold text-center text-4xl m-2">object_1037</h1>
     </div>
-    <footer className="space-y-6 absolute bottom-0 inset-x-0 flex flex-col items-center bg-gray-600 h-60">
+    <footer className="pt-4 md:pt-0 md:pl-10 space-y-6 md:space-y-0 absolute bottom-0 inset-x-0 flex flex-col md:flex-row items-center bg-gray-600 h-60 md:h-24">
       <Account account="Twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
       <Account account="GitHub" link="https://github.com/object1037" hover="hover:text-gray-300" />
     </footer>
