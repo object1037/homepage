@@ -9,9 +9,14 @@ export default function Home() {
     <>
     <Head>
       <title>object_1037</title>
+      <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@object_1037" />
+      <meta property="og:url" content="https://object1037.vercel.app/" />
+      <meta property="og:title" content="object_1037" />
+      <meta property="og:description" content="object_1037's homepage" />
+      <meta property="og:image" content="https://object1037.vercel.app/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
     </Head>
     <section className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-10 bg-gray-100 dark:bg-gray-800 py-8">
       <div className="flex rounded-full shadow-xl">
