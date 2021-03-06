@@ -1,7 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
-
 export default function Custom404() {
   return (
     <>
