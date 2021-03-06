@@ -9,8 +9,8 @@ export default function Custom404() {
         <div className="triangle2 border-solid w-0 h-0"></div>
       </div>
     </div>
-    <div className="errorCode dark:text-ppink">404</div>
-    <div className="errorSentence dark:text-gray-100 text-4xl">not found</div>
+    <div className="errorCode text-gray-900 dark:text-ppink">404</div>
+    <div className="errorSentence text-gray-900 dark:text-gray-100 text-4xl text-center">not found</div>
     </>
   )
 }
