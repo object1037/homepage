@@ -12,6 +12,7 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/images/profile.jpg"></link>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="object_1037のホームページです。" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@object_1037" />
       <meta property="og:url" content="https://object1037.vercel.app/" />
