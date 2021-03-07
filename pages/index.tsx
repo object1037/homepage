@@ -12,6 +12,7 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/images/profile.jpg"></link>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="object_1037のホームページです。" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@object_1037" />
       <meta property="og:url" content="https://object1037.vercel.app/" />
@@ -53,9 +54,9 @@ export default function Home() {
       </div>
     </section>
     <footer className="flex flex-row items-center pl-4 bg-gray-600 h-20 relative w-screen mt-20">
-        <Account account="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
-        <Account account="github" link="https://github.com/object1037" hover="hover:text-gray-300" />
-      <div className="absolute right-8 text-gray-400 font-light text-xs">&copy; 2021 object_1037</div>
+        <Account icon="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
+        <Account icon="github" link="https://github.com/object1037" hover="hover:text-gray-300" />
+      <div className="absolute right-8 text-gray-200 font-light text-xs">&copy; 2021 object_1037</div>
     </footer>
     </>
   )
