@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Account from '../components/accounts'
 import Row from '../components/tablerow'
 import Skill from '../components/skills'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -52,6 +55,14 @@ export default function Home() {
         <Skill name="React" description="できません" icon="react" />
         <Skill name="Git" description="できません" icon="git-alt" />
       </div>
+    </section>
+    <section className="flex flex-row justify-center mt-12">
+    <Link href="https://blog1037.vercel.app">
+      <a className="flex flex-row justify-center items-center p-4 text-gray-900 dark:text-gray-100 bg-gray-200 dark:bg-gray-800 rounded shadow hover:shadow-lg">
+          <span className="text-3xl mr-2">Blog</span> 
+          <span className="w-8 h-8"><FontAwesomeIcon icon={faArrowCircleRight} /></span>
+      </a>
+    </Link>
     </section>
     <footer className="flex flex-row items-center pl-4 bg-gray-600 h-20 relative w-screen mt-20">
         <Account icon="twitter" link="https://twitter.com/object_1037" hover="hover:text-twitter" />
