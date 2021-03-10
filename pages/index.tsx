@@ -58,7 +58,7 @@ export default function Home() {
     </section>
     <section className="flex flex-row justify-center mt-12">
     <Link href="https://blog1037.vercel.app">
-      <a className="flex flex-row justify-center items-center p-4 text-gray-900 dark:text-gray-100 bg-gray-200 dark:bg-gray-800 rounded shadow hover:shadow-lg">
+      <a target="_blank" rel="noopener" className="flex flex-row justify-center items-center p-4 text-gray-900 dark:text-gray-100 bg-gray-200 dark:bg-gray-800 rounded shadow hover:shadow-lg">
           <span className="text-3xl mr-2">Blog</span> 
           <span className="w-8 h-8"><FontAwesomeIcon icon={faArrowCircleRight} /></span>
       </a>
