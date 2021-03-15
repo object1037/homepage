@@ -42,7 +42,8 @@ export default function Home() {
         <tbody>
           <Row name="誕生日" value="2002年4月9日" />
           <Row name="好きなもの" value="VTuber" />
-          <Row name="居住地" value="大阪" />
+          <Row name="居住地" value="東京" />
+          <Row name="所属" value="東京大学理科一類" />
         </tbody>
       </table>
     </section>
