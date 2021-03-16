@@ -43,9 +43,14 @@ export default function Home() {
           <Row name="誕生日" value="2002年4月9日" />
           <Row name="好きなもの" value="VTuber" />
           <Row name="居住地" value="東京" />
-          <Row name="所属" value="東京大学理科一類" />
         </tbody>
       </table>
+    </section>
+    <section className="flex flex-col pb-12">
+      <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Affiliation</h1>
+      <ul className="list-inside list-disc mx-auto">
+        <li>東京大学理科一類(B1)</li>
+      </ul>
     </section>
     <section className="flex flex-col">
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Skills</h1>
