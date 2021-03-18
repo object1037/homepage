@@ -48,7 +48,7 @@ export default function Home() {
     </section>
     <section className="flex flex-col pb-12">
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Affiliation</h1>
-      <ul className="list-inside list-disc mx-auto">
+      <ul className="list-inside list-disc mx-auto text-gray-900 dark:text-gray-100">
         <li>東京大学理科一類(B1)</li>
       </ul>
     </section>
