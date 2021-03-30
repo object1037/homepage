@@ -49,7 +49,8 @@ export default function Home() {
     <section className="flex flex-col pb-12">
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Affiliation</h1>
       <ul className="list-inside list-disc mx-auto text-gray-900 dark:text-gray-100">
-        <li>東京大学理科一類(B1)</li>
+        <li className="mb-6">東京大学理科一類(B1)</li>
+        <li><a href="https://tsg.ne.jp/" target="_blank" rel="noopener" className="text-Blue-500 dark:text-Blue-400">東京大学コンピュータ系サークル TSG</a></li>
       </ul>
     </section>
     <section className="flex flex-col">
