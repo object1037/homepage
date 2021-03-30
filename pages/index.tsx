@@ -41,7 +41,7 @@ export default function Home() {
         </thead>
         <tbody>
           <Row name="誕生日" value="2002年4月9日" />
-          <Row name="好きなもの" value="VTuber" />
+          <Row name="好きなもの" value="ぽこピー" />
           <Row name="居住地" value="東京" />
         </tbody>
       </table>
@@ -49,17 +49,18 @@ export default function Home() {
     <section className="flex flex-col pb-12">
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Affiliation</h1>
       <ul className="list-inside list-disc mx-auto text-gray-900 dark:text-gray-100">
-        <li>東京大学理科一類(B1)</li>
+        <li className="mb-6">東京大学理科一類(B1)</li>
+        <li><a href="https://tsg.ne.jp/" target="_blank" rel="noopener" className="text-Blue-500 dark:text-Blue-400">東京大学コンピュータ系サークル TSG</a></li>
       </ul>
     </section>
     <section className="flex flex-col">
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Skills</h1>
       <div className="flex flex-row flex-wrap justify-center">
-        <Skill name="JavaScript" description="できません" icon="js" />
-        <Skill name="HTML" description="できません" icon="html5" />
-        <Skill name="CSS" description="できません" icon="css3-alt" />
-        <Skill name="React" description="できません" icon="react" />
-        <Skill name="Git" description="できません" icon="git-alt" />
+        <Skill name="JavaScript" description="勉強中" icon="js" />
+        <Skill name="HTML" description="" icon="html5" />
+        <Skill name="CSS" description="" icon="css3-alt" />
+        <Skill name="React" description="勉強中" icon="react" />
+        <Skill name="Git" description="" icon="git-alt" />
       </div>
     </section>
     <section className="flex flex-row justify-center mt-12">
