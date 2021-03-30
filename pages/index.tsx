@@ -57,10 +57,10 @@ export default function Home() {
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-12">Skills</h1>
       <div className="flex flex-row flex-wrap justify-center">
         <Skill name="JavaScript" description="勉強中" icon="js" />
-        <Skill name="HTML" description="" icon="html5" />
-        <Skill name="CSS" description="" icon="css3-alt" />
+        <Skill name="HTML" description="ちょっとできる" icon="html5" />
+        <Skill name="CSS" description="ちょっとできる" icon="css3-alt" />
         <Skill name="React" description="勉強中" icon="react" />
-        <Skill name="Git" description="" icon="git-alt" />
+        <Skill name="Git" description="ちょっとできる" icon="git-alt" />
       </div>
     </section>
     <section className="flex flex-row justify-center mt-12">
