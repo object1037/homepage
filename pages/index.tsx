@@ -3,9 +3,6 @@ import Image from 'next/image'
 import Account from '../components/accounts'
 import Row from '../components/tablerow'
 import Skill from '../components/skills'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
-import Link from 'next/link'
 import Contact from '../components/contactrow'
 
 export default function Home() {
