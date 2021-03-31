@@ -48,7 +48,7 @@ export default function Home() {
       <h1 className="font-sans text-3xl text-center text-gray-900 dark:text-gray-100 mb-10">Affiliation</h1>
       <ul className="list-inside list-disc mx-auto text-gray-900 dark:text-gray-100">
         <li className="mb-6">東京大学理科一類(B1)</li>
-        <li><a href="https://tsg.ne.jp/" target="_blank" rel="noopener" className="text-Blue-500 dark:text-Blue-400 hover:underline">東京大学コンピュータ系サークル TSG</a></li>
+        <li><a href="https://tsg.ne.jp/" target="_blank" rel="noopener" className="text-Blue-500 dark:text-Blue-300 hover:underline">東京大学コンピュータ系サークル TSG</a></li>
       </ul>
     </section>
     <section className="flex flex-col my-12">
@@ -77,7 +77,7 @@ export default function Home() {
       </table>
     </section>
     <section className="flex flex-col my-12">
-    <h1 className="font-sans text-3xl text-center text-Blue-500 dark:text-Blue-400"><a className="hover:underline" href="https://blog1037.vercel.app" target="_blank" rel="noopener">Blog</a></h1>
+    <h1 className="font-sans text-3xl text-center text-Blue-500 dark:text-Blue-300"><a className="hover:underline" href="https://blog1037.vercel.app" target="_blank" rel="noopener">Blog</a></h1>
     </section>
     <footer className="flex flex-row items-center pl-4 bg-gray-600 h-20 relative w-screen mt-16">
         <Account icon="twitter" link="https://twitter.com/object1037" hover="hover:text-twitter" />
