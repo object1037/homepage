@@ -70,6 +70,7 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
+          <Contact name="Mail" value="contact@object1037.dev" url="mailto:contact@object1037.dev" />
           <Contact name="Twitter" value="@object1037" url="https://twitter.com/object1037" />
           <Contact name="GitHub" value="@object1037" url="https://github.com/object1037" />
         </tbody>
