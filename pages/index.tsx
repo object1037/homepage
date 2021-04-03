@@ -20,7 +20,6 @@ export default function Home() {
       <meta property="og:title" content="object1037" />
       <meta property="og:description" content="object1037's homepage" />
       <meta property="og:image" content="https://object1037.vercel.app/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
-      <meta name="google-site-verification" content="NE6TDGJcUUnRDHmhTZdMo8rFYwP97C3w8rYSXMI3wyo" />
     </Head>
     <section className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-10 bg-gray-100 dark:bg-gray-800 py-8">
       <div className="flex rounded-full shadow-xl">
