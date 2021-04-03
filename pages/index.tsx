@@ -16,10 +16,10 @@ export default function Home() {
       <meta name="description" content="object1037のホームページです。" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@object1037" />
-      <meta property="og:url" content="https://object1037.vercel.app/" />
+      <meta property="og:url" content="https://object1037.dev" />
       <meta property="og:title" content="object1037" />
       <meta property="og:description" content="object1037's homepage" />
-      <meta property="og:image" content="https://object1037.vercel.app/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
+      <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
     </Head>
     <section className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-10 bg-gray-100 dark:bg-gray-800 py-8">
       <div className="flex rounded-full shadow-xl">
@@ -76,7 +76,7 @@ export default function Home() {
       </table>
     </section>
     <section className="flex flex-col my-12">
-    <h1 className="font-sans text-3xl text-center text-Blue-500 dark:text-Blue-300"><a className="hover:underline" href="https://blog1037.vercel.app" target="_blank" rel="noopener">Blog</a></h1>
+    <h1 className="font-sans text-3xl text-center text-Blue-500 dark:text-Blue-300"><a className="hover:underline" href="https://blog.object1037.dev" target="_blank" rel="noopener">Blog</a></h1>
     </section>
     <footer className="flex flex-row items-center pl-4 bg-gray-600 h-20 relative w-screen mt-16">
         <Account icon="twitter" link="https://twitter.com/object1037" hover="hover:text-twitter" />
