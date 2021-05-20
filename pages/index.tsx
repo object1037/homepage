@@ -21,7 +21,7 @@ export default function Home() {
         <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
       </Head>
       <Header />
-      <main className="py-10 px-6">
+      <main className="py-10">
         <Section title="Profile">
           <div className="grid grid-cols-2 divide-gray-900 divide-x">
             <div>
@@ -49,6 +49,20 @@ export default function Home() {
             <SkillCard name="CSS" description="ちょっとできる" icon="css3-alt" />
             <SkillCard name="React" description="勉強中" icon="react" />
             <SkillCard name="Git" description="ちょっとできる" icon="git-alt" />
+          </div>
+        </Section>
+        <Section title="Contact">
+          <div className="grid grid-cols-7 divide-gray-900 divide-x mx-auto">
+            <div className="col-span-2">
+              <div className="text-right p-4">Mail</div>
+              <div className="text-right p-4">Twitter</div>
+              <div className="text-right p-4">GitHub</div>
+            </div>
+            <div className="col-span-5">
+              <div className="text-left p-4">contact@object1037.dev</div>
+              <div className="text-left p-4">@object1037</div>
+              <div className="text-left p-4">@object1037</div>
+            </div>
           </div>
         </Section>
       </main>
