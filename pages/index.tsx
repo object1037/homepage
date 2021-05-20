@@ -20,7 +20,7 @@ export default function Home() {
         <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
       </Head>
       <Header />
-      <main>
+      <main className="py-10 px-6">
         <Section title="Profile">
           <div className="grid grid-cols-2">
               <div className="text-right border-gray-900 border-r p-4">誕生日</div>
@@ -32,6 +32,12 @@ export default function Home() {
               <div className="text-right border-gray-900 border-r p-4">居住地</div>
               <div className="text-left p-4">東京</div>
           </div>
+        </Section>
+        <Section title="Affiliation">
+          <ul className="list-inside list-disc mx-auto flex flex-col space-y-6">
+            <li>東京大学理科一類(B1)</li>
+            <li>東京大学コンピュータ系サークル TSG</li>
+          </ul>
         </Section>
       </main>
       <Footer />

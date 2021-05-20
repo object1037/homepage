@@ -10,7 +10,7 @@ export default function Section({
   return (
     <section className="flex flex-col">
       <SectionTitle title={title} />
-      <div className="py-10">{children}</div>
+      <div className="py-10 flex flex-col justify-center">{children}</div>
     </section>
   )
 }
