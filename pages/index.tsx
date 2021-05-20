@@ -23,15 +23,17 @@ export default function Home() {
       <Header />
       <main className="py-10 px-6">
         <Section title="Profile">
-          <div className="grid grid-cols-2">
-              <div className="text-right border-gray-900 border-r p-4">誕生日</div>
+          <div className="grid grid-cols-2 divide-gray-900 divide-x">
+            <div>
+              <div className="text-right p-4">誕生日</div>
+              <div className="text-right p-4">好きなもの</div>
+              <div className="text-right p-4">居住地</div>
+            </div>
+            <div>
               <div className="text-left p-4">2002年4月9日</div>
-
-              <div className="text-right border-gray-900 border-r p-4">好きなもの</div>
               <div className="text-left p-4">Web, ぽこピー</div>
-
-              <div className="text-right border-gray-900 border-r p-4">居住地</div>
               <div className="text-left p-4">東京</div>
+            </div>
           </div>
         </Section>
         <Section title="Affiliation">
