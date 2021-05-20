@@ -22,7 +22,16 @@ export default function Home() {
       <Header />
       <main>
         <Section title="Profile">
-          <div></div>
+          <div className="grid grid-cols-2">
+              <div className="text-right border-gray-900 border-r p-4">誕生日</div>
+              <div className="text-left p-4">2002年4月9日</div>
+
+              <div className="text-right border-gray-900 border-r p-4">好きなもの</div>
+              <div className="text-left p-4">Web, ぽこピー</div>
+
+              <div className="text-right border-gray-900 border-r p-4">居住地</div>
+              <div className="text-left p-4">東京</div>
+          </div>
         </Section>
       </main>
       <Footer />
