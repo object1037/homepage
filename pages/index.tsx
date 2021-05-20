@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Section from '../components/section'
+import SkillCard from '../components/skill-card'
 
 export default function Home() {
   return (
@@ -38,6 +39,15 @@ export default function Home() {
             <li>東京大学理科一類(B1)</li>
             <li>東京大学コンピュータ系サークル TSG</li>
           </ul>
+        </Section>
+        <Section title="Skills">
+          <div className="flex flex-row justify-center flex-wrap">
+            <SkillCard name="JavaScript" description="勉強中" icon="js" />
+            <SkillCard name="HTML" description="ちょっとできる" icon="html5" />
+            <SkillCard name="CSS" description="ちょっとできる" icon="css3-alt" />
+            <SkillCard name="React" description="勉強中" icon="react" />
+            <SkillCard name="Git" description="ちょっとできる" icon="git-alt" />
+          </div>
         </Section>
       </main>
       <Footer />
