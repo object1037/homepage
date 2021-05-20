@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Section from '../components/section'
 import SkillCard from '../components/skill-card'
+import ELink from '../components/external-link'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
       </Head>
       <Header />
-      <main className="py-10">
+      <main className="pt-10 flex flex-col pb-20">
         <Section title="Profile">
           <div className="grid grid-cols-2 divide-gray-900 divide-x">
             <div>
@@ -65,6 +66,7 @@ export default function Home() {
             </div>
           </div>
         </Section>
+        <ELink displayName="Blog" url="https://blog.object1037.dev" />
       </main>
       <Footer />
     </>
