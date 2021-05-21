@@ -8,12 +8,12 @@ import List from '../components/list'
 
 const likes = [
   "フロントエンド",
-  <ELink url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw" className="">ぽこピー</ELink>,
+  <ELink url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">ぽこピー</ELink>,
 ]
 
 const affiliations = [
   "東京大学理科一類(B1)",
-  <ELink url="https://tsg.ne.jp/" className="">東京大学コンピュータ系サークル TSG</ELink>,
+  <ELink url="https://tsg.ne.jp/">東京大学コンピュータ系サークル TSG</ELink>,
 ]
 
 export default function Home() {
@@ -21,8 +21,6 @@ export default function Home() {
     <>
       <Head>
         <title>object1037</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/profile.jpg"></link>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="object1037のホームページです。" />
         <meta name="twitter:card" content="summary" />
@@ -70,13 +68,13 @@ export default function Home() {
             </div>
             <div className="col-span-5">
               <div className="text-left p-4">
-                <ELink url="mailto:contact@object1037.dev" className="">contact@object1037.dev</ELink>
+                <ELink url="mailto:contact@object1037.dev">contact@object1037.dev</ELink>
               </div>
               <div className="text-left p-4">
-                <ELink url="https://twitter.com/object1037" className="">@object1037</ELink>
+                <ELink url="https://twitter.com/object1037">@object1037</ELink>
               </div>
               <div className="text-left p-4">
-                <ELink url="https://github.com/object1037" className="">@object1037</ELink>
+                <ELink url="https://github.com/object1037">@object1037</ELink>
               </div>
             </div>
           </div>
