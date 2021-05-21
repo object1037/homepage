@@ -8,12 +8,12 @@ import List from '../components/list'
 
 const likes = [
   "フロントエンド",
-  "ぽこピー",
+  <ELink url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw" className="">ぽこピー</ELink>,
 ]
 
 const affiliations = [
   "東京大学理科一類(B1)",
-  "東京大学コンピュータ系サークル TSG",
+  <ELink url="https://tsg.ne.jp/" className="">東京大学コンピュータ系サークル TSG</ELink>,
 ]
 
 export default function Home() {
