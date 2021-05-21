@@ -4,6 +4,17 @@ import Footer from '../components/footer'
 import Section from '../components/section'
 import SkillCard from '../components/skill-card'
 import ELink from '../components/external-link'
+import List from '../components/list'
+
+const likes = [
+  "フロントエンド",
+  "ぽこピー",
+]
+
+const affiliations = [
+  "東京大学理科一類(B1)",
+  "東京大学コンピュータ系サークル TSG",
+]
 
 export default function Home() {
   return (
@@ -27,21 +38,19 @@ export default function Home() {
           <div className="grid grid-cols-2 divide-gray-900 divide-x">
             <div>
               <div className="text-right p-4">誕生日</div>
-              <div className="text-right p-4">好きなもの</div>
               <div className="text-right p-4">居住地</div>
             </div>
             <div>
               <div className="text-left p-4">2002年4月9日</div>
-              <div className="text-left p-4">Web, ぽこピー</div>
               <div className="text-left p-4">東京</div>
             </div>
           </div>
         </Section>
+        <Section title="Likes">
+          <List listArr={likes} />
+        </Section>
         <Section title="Affiliation">
-          <ul className="list-inside list-disc mx-auto flex flex-col space-y-6">
-            <li>東京大学理科一類(B1)</li>
-            <li>東京大学コンピュータ系サークル TSG</li>
-          </ul>
+          <List listArr={affiliations} />
         </Section>
         <Section title="Skills">
           <div className="flex flex-row justify-center flex-wrap">
