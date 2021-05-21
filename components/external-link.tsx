@@ -1,11 +1,22 @@
+import clsx from 'clsx'
+
 export default function ELink({
-  displayName,
-  url
+  children,
+  url,
+  className
 }: {
-  displayName: string,
-  url: string
+  children: string,
+  url: string,
+  className: string
 }) {
   return (
-    <a href={url} rel="noopener noreferrer" target="_blank" className="text-3xl text-center mx-auto text-Blue-500 dark:text-Blue-300 hover:underline">{displayName}</a>
+    <a href={url} rel="noopener noreferrer" target="_blank" className={clsx(
+      'text-center',
+      'mx-auto',
+      'text-Blue-500',
+      'dark:text-Blue-300',
+      'hover:underline',
+      [className]
+    )}>{children}</a>
   )
 }

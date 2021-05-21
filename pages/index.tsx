@@ -69,13 +69,19 @@ export default function Home() {
               <div className="text-right p-4">GitHub</div>
             </div>
             <div className="col-span-5">
-              <div className="text-left p-4">contact@object1037.dev</div>
-              <div className="text-left p-4">@object1037</div>
-              <div className="text-left p-4">@object1037</div>
+              <div className="text-left p-4">
+                <ELink url="mailto:contact@object1037.dev" className="">contact@object1037.dev</ELink>
+              </div>
+              <div className="text-left p-4">
+                <ELink url="https://twitter.com/object1037" className="">@object1037</ELink>
+              </div>
+              <div className="text-left p-4">
+                <ELink url="https://github.com/object1037" className="">@object1037</ELink>
+              </div>
             </div>
           </div>
         </Section>
-        <ELink displayName="Blog" url="https://blog.object1037.dev" />
+        <ELink url="https://blog.object1037.dev" className="text-3xl">Blog</ELink>
       </main>
       <Footer />
     </>
