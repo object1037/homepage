@@ -33,13 +33,13 @@ export default function Home() {
       <Header />
       <main className="pt-10 flex flex-col pb-20">
         <Section title="Profile">
-          <div className="grid grid-cols-2 divide-gray-900 divide-x">
+          <div className="grid grid-cols-2 dark:divide-gray-300 divide-gray-800 divide-x">
             <div>
               <div className="text-right p-4">誕生日</div>
               <div className="text-right p-4">居住地</div>
             </div>
             <div>
-              <div className="text-left p-4">2002年4月9日</div>
+              <div className="text-left p-4">2002/4/9</div>
               <div className="text-left p-4">東京</div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </Section>
         <Section title="Contact">
-          <div className="grid grid-cols-7 divide-gray-900 divide-x mx-auto">
+          <div className="grid grid-cols-7 divide-gray-800 dark:divide-gray-300 divide-x mx-auto">
             <div className="col-span-2">
               <div className="text-right p-4">Mail</div>
               <div className="text-right p-4">Twitter</div>

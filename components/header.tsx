@@ -6,7 +6,7 @@ export default function Header() {
       <div className="flex rounded-full shadow-xl">
         <Image priority src="/images/profile.jpg" alt="my profile picture" width={200} height={200} className="rounded-full" /> 
       </div>
-      <h1 className="font-sans font-bold text-4xl m-2 text-gray-900 dark:text-gray-100 min-h-full">object1037</h1>
+      <h1 className="font-sans font-bold text-4xl m-2 min-h-full">object1037</h1>
     </header>
   )
 }
