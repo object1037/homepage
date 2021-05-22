@@ -22,7 +22,7 @@ module.exports = {
       purple: colors.purple,
       pink: colors.pink,
       twitter: '#1DA1F2',
-      ppink: '#ff0f53',
+      ppink: '#fd2e7a',
     },
     extend: {},
   },
