@@ -5,26 +5,12 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    container: {
-      center: true,
+    extend: {
+      colors: {
+        gray: colors.trueGray,
+        ppink: '#fd2e7a',
+      },
     },
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.trueGray,
-      indigo: colors.indigo,
-      red: colors.rose,
-      yellow: colors.amber,
-      green: colors.green,
-      Blue: colors.blue,
-      purple: colors.purple,
-      pink: colors.pink,
-      twitter: '#1DA1F2',
-      ppink: '#fd2e7a',
-    },
-    extend: {},
   },
   variants: {
     extend: {},
