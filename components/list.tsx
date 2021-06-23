@@ -6,7 +6,14 @@ export default function List({
   return (
     <ul className="list-inside list-disc mx-auto flex flex-col space-y-4">
       {listArr.map((content) => {
-        return <li key={String(content)}>{content}</li>
+        let key: string
+        if (typeof content === 'string') {
+          key = content
+        } else {
+          key = content.props.url
+        }
+
+        return <li key={key}>{content}</li>
       })}
     </ul>
   )
