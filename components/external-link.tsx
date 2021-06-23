@@ -3,11 +3,11 @@ import clsx from 'clsx'
 export default function ELink({
   children,
   url,
-  className
+  className,
 }: {
   children: string,
   url: string,
-  className?: string
+  className?: string,
 }) {
   return (
     <a href={url} rel="noopener noreferrer" target="_blank" className={clsx(
