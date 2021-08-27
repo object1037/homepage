@@ -9,14 +9,16 @@ export default function ELink({
   url: string,
   className?: string,
 }) {
+  const linkStyle = [
+    'text-center',
+    'mx-auto',
+    'text-blue-500',
+    'dark:text-blue-300',
+    'hover:underline'
+  ]
   return (
-    <a href={url} rel="noopener noreferrer" target="_blank" className={clsx(
-      'text-center',
-      'mx-auto',
-      'text-blue-500',
-      'dark:text-blue-300',
-      'hover:underline',
-      [className]
-    )}>{children}</a>
+    <a href={url} rel="noopener noreferrer" target="_blank" className={clsx(linkStyle, [className])}>
+      {children}
+    </a>
   )
 }
