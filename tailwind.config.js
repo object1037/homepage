@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -9,6 +10,9 @@ module.exports = {
       colors: {
         gray: colors.trueGray,
         ppink: '#fd2e7a',
+      },
+      fontFamily: {
+        sans: ['Inter', 'YuGothic', "Yu Gothic Medium", "Yu Gothic", ...fontFamily.sans]
       },
     },
   },
