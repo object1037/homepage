@@ -19,6 +19,12 @@
   src: url(/fonts/LVDC-Polly.woff2) format('woff2');
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .circle {
   border-width: 1.5rem;
 }
