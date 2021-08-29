@@ -49,7 +49,7 @@ export default function Home() {
         <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
       </Head>
       <Header />
-      <main className="pt-10 pb-20 px-6 sm:px-12">
+      <main className="flex-shrink-0 flex-1 pt-10 pb-20 px-6 sm:px-12">
         <Section title="Profile">
           <div className="grid grid-rows-3 grid-flow-col">
             <div className="contents">
