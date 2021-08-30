@@ -25,14 +25,13 @@ export default function Home() {
         <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
       </Head>
       <Header />
-      <main className="flex-shrink-0 flex-1 pt-10 pb-20 px-6 sm:px-12">
+      <main className="flex-shrink-0 flex-1 pt-10 pb-20 px-6 sm:px-12 text-lg">
         <Section title="Profile">
-          <p>
-            I like Front-end, Design, and <ELink key="ぽこピー" url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">ぽこピー</ELink>.
-          </p>
-          <p>
-            Born on the 9th April 2002.
-          </p>
+            <div className="leading-relaxed">
+              I like Front-end, Design, and <ELink key="ぽこピー" url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">ぽこピー</ELink>.
+              <br/>
+              Born on the 9th April 2002.
+            </div>
         </Section>
         <Section title="Affiliation">
           <List listArr={affiliations} />
