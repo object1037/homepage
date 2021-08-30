@@ -4,34 +4,10 @@ import Footer from '../components/footer'
 import Section from '../components/section'
 import ELink from '../components/external-link'
 import List from '../components/list'
-import { FaBirthdayCake } from 'react-icons/fa'
-import { FiMapPin, FiHeart } from 'react-icons/fi'
-import clsx from 'clsx'
 
 const affiliations = [
   "The University of Tokyo (B1)",
   <ELink key="TSG" url="https://tsg.ne.jp/">TSG</ELink>,
-]
-const profileIconStyle = [
-  'flex',
-  'justify-center',
-  'items-center',
-  'pr-6',
-  'pl-3',
-  'py-4',
-  'text-xl',
-  'align-text-bottom',
-  'border-r',
-  'border-gray-700',
-  'dark:border-gray-400'
-]
-const profileContentStyle = [
-  'py-4',
-  'pl-6',
-  'flex',
-  'flex-wrap',
-  'items-center',
-  'whitespace-pre'
 ]
 
 export default function Home() {
@@ -51,20 +27,12 @@ export default function Home() {
       <Header />
       <main className="flex-shrink-0 flex-1 pt-10 pb-20 px-6 sm:px-12">
         <Section title="Profile">
-          <div className="grid grid-rows-3 grid-flow-col">
-            <div className="contents">
-              <div className={clsx(profileIconStyle)}><FaBirthdayCake /></div>
-              <div className={clsx(profileIconStyle)}><FiHeart /></div>
-              <div className={clsx(profileIconStyle)}><FiMapPin /></div>
-            </div>
-            <div className="contents">
-              <div className={clsx(profileContentStyle)}>2002/4/9</div>
-              <div className={clsx(profileContentStyle)}>
-                Front-end, Design, <ELink key="ぽこピー" url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">ぽこピー</ELink>
-              </div>
-              <div className={clsx(profileContentStyle)}>Tokyo</div>
-            </div>
-          </div>
+          <p>
+            I like Front-end, Design, and <ELink key="ぽこピー" url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">ぽこピー</ELink>.
+          </p>
+          <p>
+            Born on the 9th April 2002.
+          </p>
         </Section>
         <Section title="Affiliation">
           <List listArr={affiliations} />
