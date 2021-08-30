@@ -28,7 +28,7 @@ export default function Home() {
       <main className="flex-shrink-0 flex-1 py-8 text-lg">
         <Section title="Profile">
             <div className="leading-loose">
-              I like Front-end, Design, and <ELink key="ぽこピー" url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">ぽこピー</ELink>.
+              I like Front-end, Design, and <ELink key="ぽこピー" url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">Pokopea</ELink>.
               <br/>
               Born on the 9th April 2002.
             </div>
@@ -36,7 +36,7 @@ export default function Home() {
         <Section title="Affiliation">
           <List listArr={affiliations} />
         </Section>
-        <Section title={<ELink url="https://blog.object1037.dev">Blog</ELink>} />
+        <Section title={<ELink url="https://blog.object1037.dev" bold>Blog</ELink>} />
       </main>
       <Footer />
     </>
