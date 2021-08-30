@@ -3,20 +3,19 @@ import clsx from 'clsx'
 export default function ELink({
   children,
   url,
-  className,
+  bold
 }: {
   children: string,
   url: string,
-  className?: string,
+  bold?: boolean,
 }) {
   const linkStyle = [
     'text-center',
-    'text-blue-500',
-    'dark:text-blue-300',
+    'text-ppink',
     'hover:underline'
   ]
   return (
-    <a href={url} rel="noopener noreferrer" target="_blank" className={clsx(linkStyle, [className])}>
+    <a href={url} rel="noopener noreferrer" target="_blank" className={clsx(linkStyle, bold ? 'font-bold' : 'font-medium')}>
       {children}
     </a>
   )
