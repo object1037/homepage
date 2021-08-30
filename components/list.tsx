@@ -4,7 +4,7 @@ export default function List({
   listArr: (string | JSX.Element)[]
 }) {
   return (
-    <ul className="pl-3 list-inside list-disc flex flex-col space-y-4">
+    <ul className="list-inside list-disc flex flex-col space-y-4">
       {listArr.map((content) => {
         let key: string
         if (typeof content === 'string') {
