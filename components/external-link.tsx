@@ -11,7 +11,8 @@ export default function ELink({
 }) {
   const linkStyle = [
     'text-center',
-    'text-ppink',
+    'text-ppink-300',
+    'dark:text-ppink-200',
     'hover:underline'
   ]
   return (
