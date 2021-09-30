@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       colors: {
         gray: colors.trueGray,
-        ppink: '#fd2e7a',
+        ppink: {
+          200: '#fd2e7a',
+          300: '#df286c',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'YuGothic', "Yu Gothic Medium", "Yu Gothic", ...fontFamily.sans]
