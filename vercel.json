@@ -18,5 +18,11 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "https://blog.object1037.dev"
+    }
   ]
 }
