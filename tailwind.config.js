@@ -2,13 +2,11 @@ const colors = require('tailwindcss/colors')
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // or 'media' or 'class'
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        gray: colors.trueGray,
+        gray: colors.neutral,
         ppink: {
           200: '#fd2e7a',
           300: '#df286c',
@@ -18,9 +16,6 @@ module.exports = {
         sans: ['Inter', 'YuGothic', "Yu Gothic Medium", "Yu Gothic", ...fontFamily.sans]
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }
