@@ -6,10 +6,10 @@ export default function Footer() {
   <footer className="flex items-center bg-gray-100 dark:bg-gray-800 py-2 px-6 mt-auto">
     <div className="flex flex-row items-center justify-between w-full max-w-5xl mx-auto">
       <div className="flex flex-row space-x-2">
-        <IconLink label="Twitterのリンク" link="https://twitter.com/object1037" >
+        <IconLink label="Twitter link" link="https://twitter.com/object1037" >
           <FiTwitter />
         </IconLink>
-        <IconLink label="GitHubのリンク" link="https://github.com/object1037" >
+        <IconLink label="GitHub link" link="https://github.com/object1037" >
           <FiGithub />
         </IconLink>
       </div>
