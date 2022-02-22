@@ -23,6 +23,7 @@ export default function Home() {
         <meta property="og:title" content="object1037" />
         <meta property="og:description" content="object1037's homepage" />
         <meta property="og:image" content="https://object1037.dev/_next/image?url=%2Fimages%2Fprofile.jpg&w=640&q=75" />
+        <link rel='canonical' href='https://object1037.dev'/>
       </Head>
       <Header />
       <main className="flex-shrink-0 flex-1 py-8 text-lg">
