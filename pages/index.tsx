@@ -6,7 +6,7 @@ import ELink from '../components/external-link'
 import List from '../components/list'
 
 const affiliations = [
-  "The University of Tokyo (B1)",
+  "The University of Tokyo (B2)",
   <ELink key="TSG" url="https://tsg.ne.jp/">TSG</ELink>,
 ]
 
