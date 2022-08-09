@@ -18,18 +18,14 @@ export default function Header() {
     'sticky',
     'top-0',
     'bg-white',
-    'dark:bg-gray-900',
-    'bg-opacity-60',
-    'dark:bg-opacity-60',
-    'backdrop-filter',
-    'backdrop-blur-md'
+    'dark:bg-gray-900'
   ]
   return (
     <header className={clsx(headerStyle)}>
       <div className="sticky top-0 max-w-5xl mx-auto flex flex-row justify-start items-center space-x-4">
-        <div className={clsx(loaded && 'bg-[#fff5f6]', 'w-[4.8rem] h-[4.8rem] rounded-full transition duration-1000 delay-300')}>
-          <Icon className={clsx(loaded ? 'fill-[#ffbac1] stroke-black' : 'dark:stroke-white fill-transparent', "w-16 h-16 m-[0.4rem] transition duration-1000 delay-300")}/>
-        </div>
+        <a className={clsx(loaded && 'bg-[#fff5f6]', 'w-20 h-20 rounded-full transition duration-1000 delay-500')} href="https://icon.object1037.dev" target="_blank" rel="noopener noreferrer" aria-label='icon'>
+          <Icon className={clsx(loaded ? 'fill-[#ffbac1] stroke-black' : 'dark:stroke-white fill-transparent', "w-[4.8rem] h-[4.8rem] m-[0.1rem] transition duration-1000 delay-500")}/>
+        </a>
         <h1 className="font-semibold text-2xl m-2">object1037</h1>
       </div>
     </header>
