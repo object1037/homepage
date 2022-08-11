@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:url" content="https://object1037.dev" />
         <meta property="og:title" content="object1037" />
         <meta property="og:description" content="object1037's homepage" />
-        <meta property="og:image" content="https://icon.object1037.dev/color.png" />
+        <meta property="og:image" content="https://icon.object1037.dev/png" />
         <link rel='canonical' href='https://object1037.dev'/>
       </Head>
       <Header />
