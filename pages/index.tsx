@@ -31,7 +31,7 @@ export default function Home() {
       <main className="flex-shrink-0 flex-1 py-8 text-lg">
         <Section title="Profile">
           <div className="leading-loose">
-            I like Front-end, Design, and{' '}
+            I like Web, Design, and{" "}
             <ELink
               key="Pokopea"
               url="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw"
