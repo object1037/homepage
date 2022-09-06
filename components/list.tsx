@@ -1,5 +1,5 @@
 export default function List({
-  listArr
+  listArr,
 }: {
   listArr: (string | JSX.Element)[]
 }) {

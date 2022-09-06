@@ -1,4 +1,10 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext} from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -8,7 +14,10 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en" className="h-full flex flex-col text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+      <Html
+        lang="en"
+        className="h-full flex flex-col text-gray-900 dark:bg-gray-900 dark:text-gray-100"
+      >
         <Head>
           <link
             rel="preload"
