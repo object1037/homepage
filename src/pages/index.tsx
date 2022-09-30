@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { HeroHeader } from '../components/HeroHeader'
-import clsx from 'clsx'
+import { FiGithub, FiTwitter } from 'react-icons/fi'
+import { Link } from '../components/Link'
+import { LargeLink } from '../components/LargeLink'
 
 const IndexPage = () => {
   return (
@@ -18,12 +20,48 @@ const IndexPage = () => {
         <link rel="canonical" href="https://object1037.dev" />
       </Head>
       <HeroHeader />
-      <main className="min-h-screenWithoutHeader px-8 py-24">
-        <p>
-          I&apos;m object1037, a student at the University of Tokyo(B2), Web
-          enthusiast, Pokopea aficionado. Born on the 9th April 2002.
-        </p>
-      </main>
+      <div className="flex flex-col justify-between min-h-screenWithoutHeader px-8 py-24">
+        <main className="space-y-12">
+          <article>
+            <h2>About</h2>
+            <p>
+              I&apos;m object1037, a student at the University of Tokyo(B2), Web
+              enthusiast,{' '}
+              <Link href="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">
+                Pokopea
+              </Link>{' '}
+              aficionado. Born on the 9th April 2002.
+            </p>
+          </article>
+          <article>
+            <h2>Links</h2>
+            <ul>
+              <li>
+                <Link href="https://blog.object1037.dev">Blog</Link>
+              </li>
+              <li>
+                <Link href="https://twitter.com/object1037">Twitter</Link>
+              </li>
+              <li>
+                <Link href="https://github.com/object1037">GitHub</Link>
+              </li>
+            </ul>
+          </article>
+        </main>
+        <footer className="flex justify-between items-center">
+          <div className="flex gap-x-4">
+            <LargeLink href="https://twitter.com/object1037">
+              <FiTwitter />
+            </LargeLink>
+            <LargeLink href="https://github.com/object1037">
+              <FiGithub />
+            </LargeLink>
+          </div>
+          <small className="text-gray-400 text-xs">
+            &copy; 2022 object1037
+          </small>
+        </footer>
+      </div>
     </>
   )
 }

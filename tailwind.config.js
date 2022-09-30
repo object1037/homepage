@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         sans: ['JetBrainsMono', ...fontFamily.mono],
       },
+      height: {
+        screen: 'calc(100vh - 2rem)',
+      },
       minHeight: {
         screenWithoutHeader: ['calc(100vh - 9rem)', 'calc(100dvh - 9rem)'],
       },

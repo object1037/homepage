@@ -15,3 +15,6 @@
 #__next {
   @apply max-w-4xl mx-auto
 }
+h2 {
+  @apply text-4xl my-6 font-bold
+}
