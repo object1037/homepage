@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/fonts/Inter-var.woff2",
+      "source": "/fonts/JetBrainsMono-var.woff2",
       "headers": [
         {
           "key": "Cache-Control",
