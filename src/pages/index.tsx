@@ -48,7 +48,7 @@ const IndexPage = () => {
             </ul>
           </article>
         </main>
-        <footer className="flex justify-between items-center">
+        <footer className="flex justify-between items-center mt-24">
           <div className="flex gap-x-4">
             <LargeLink href="https://twitter.com/object1037">
               <FiTwitter />
