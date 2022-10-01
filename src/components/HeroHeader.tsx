@@ -36,7 +36,7 @@ export const HeroHeader = () => {
   const shrinkStyle = ['w-36 sm:w-40', 'h-28 sm:h-36']
   const transitionStyle = [
     'transition-all',
-    'duration-700',
+    'duration-500',
     'motion-reduce:transition-none',
   ]
 
