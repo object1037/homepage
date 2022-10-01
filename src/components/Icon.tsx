@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from 'react'
 
-const Icon = (props: ComponentPropsWithoutRef<'svg'>) => {
+export const Icon = (props: ComponentPropsWithoutRef<'svg'>) => {
   return (
     <svg
       stroke="currentColor"
@@ -12,6 +12,8 @@ const Icon = (props: ComponentPropsWithoutRef<'svg'>) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       xmlns="http://www.w3.org/2000/svg"
+      aria-label="object1037's icon"
+      role="img"
       {...props}
     >
       <path
@@ -30,5 +32,3 @@ const Icon = (props: ComponentPropsWithoutRef<'svg'>) => {
     </svg>
   )
 }
-
-export default Icon

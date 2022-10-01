@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(/fonts/JetBrainsMono-var.woff2) format('woff2');
+  /* !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ */
+  unicode-range: U+0021-007E;
+}
+
+#__next {
+  @apply max-w-4xl mx-auto
+}
+h2 {
+  @apply text-4xl my-6 font-bold
+}
