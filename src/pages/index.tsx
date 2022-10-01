@@ -25,7 +25,8 @@ const IndexPage = () => {
           <article>
             <h2>About</h2>
             <p>
-              I&apos;m object1037, a student at the University of Tokyo(B2), Web
+              I&apos;m object1037, a student at the University of Tokyo(B2,{' '}
+              <Link href="https://www.ee.t.u-tokyo.ac.jp/">EEIC</Link>), Web
               enthusiast,{' '}
               <Link href="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">
                 Pokopea
