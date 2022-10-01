@@ -43,7 +43,7 @@ export const HeroHeader = () => {
       <div ref={ref} className="h-px" />
       <div
         className={clsx(
-          'flex items-center transition-all duration-700 bg-white',
+          'flex items-center transition-all duration-700 bg-gray-50',
           shrink ? 'h-28 sm:h-36' : 'h-screen'
         )}
       >
@@ -65,7 +65,7 @@ export const HeroHeader = () => {
             >
               <span
                 className={clsx(
-                  'absolute bg-white left-1/2 -translate-x-1/2 -translate-y-3 px-3 font-extralight text-gray-400 transition-all duration-700',
+                  'absolute left-1/2 -translate-x-1/2 -translate-y-3 px-3 font-extralight text-gray-500 bg-gray-50 transition-all duration-700',
                   shrink ? 'text-[0px]' : 'text-base'
                 )}
               >
@@ -75,14 +75,16 @@ export const HeroHeader = () => {
           ))}
           <Icon
             className={clsx(
-              'stroke-gray-500 dark:stroke-gray-400 transition-all duration-700 max-h-40',
-              shrink ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start' : 'h-1/5'
+              'dark:stroke-gray-400 transition-all duration-700 max-h-40',
+              shrink
+                ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start stroke-gray-700'
+                : 'h-1/5 stroke-gray-600'
             )}
           />
         </div>
         <div
           className={clsx(
-            'fixed max-h-[700px] max-w-4xl w-full items-center transition-all duration-700 -translate-y-px bg-white',
+            'fixed max-h-[700px] max-w-4xl w-full items-center transition-all duration-700 -translate-y-px bg-gray-50',
             shrink ? 'h-28 sm:h-36' : 'h-screen'
           )}
         >
@@ -90,8 +92,8 @@ export const HeroHeader = () => {
             className={clsx(
               'absolute font-semibold transition-all duration-700',
               shrink
-                ? 'top-1/2 left-full -translate-x-[calc(100%+2rem)] -translate-y-1/2 text-gray-600'
-                : 'top-[58%] left-1/2 -translate-x-1/2 text-gray-500'
+                ? 'top-1/2 left-full -translate-x-[calc(100%+2rem)] -translate-y-1/2 text-gray-700'
+                : 'top-[58%] left-1/2 -translate-x-1/2 text-gray-600'
             )}
           >
             object1037

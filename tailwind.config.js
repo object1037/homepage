@@ -8,13 +8,9 @@ module.exports = {
     extend: {
       colors: {
         gray: colors.zinc,
-        ppink: {
-          200: '#fd2e7a',
-          300: '#df286c',
-        },
       },
       fontFamily: {
-        sans: ['JetBrainsMono', ...fontFamily.mono],
+        mono: ['JetBrainsMono', ...fontFamily.mono],
       },
       height: {
         screen: 'calc(100vh - 2rem)',

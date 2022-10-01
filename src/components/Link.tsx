@@ -10,7 +10,7 @@ export const Link = ({
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      className="border-b border-gray-300 hover:border-gray-600 transition"
+      className="border-b border-[#c3c3c8] hover:border-gray-800 transition"
     >
       {children}
     </a>

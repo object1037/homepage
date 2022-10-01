@@ -58,7 +58,7 @@ const IndexPage = () => {
               <FiGithub />
             </LargeLink>
           </div>
-          <small className="text-gray-400 text-xs">
+          <small className="text-gray-500 text-xs">
             &copy; 2022 object1037
           </small>
         </footer>
