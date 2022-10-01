@@ -1,18 +1,12 @@
-export const Link = ({
-  href,
-  children,
-}: {
-  href: string
-  children: React.ReactNode
-}) => {
+import { ComponentPropsWithoutRef } from 'react'
+
+export const Link = (props: ComponentPropsWithoutRef<'a'>) => {
   return (
     <a
-      href={href}
       target="_blank"
       rel="noreferrer noopener"
       className="border-b border-gray-350 dark:border-gray-600 hover:border-gray-800 dark:hover:border-gray-200 transition"
-    >
-      {children}
-    </a>
+      {...props}
+    />
   )
 }

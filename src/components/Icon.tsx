@@ -12,6 +12,8 @@ export const Icon = (props: ComponentPropsWithoutRef<'svg'>) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       xmlns="http://www.w3.org/2000/svg"
+      aria-label="object1037's icon"
+      role="img"
       {...props}
     >
       <path

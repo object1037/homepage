@@ -51,10 +51,16 @@ const IndexPage = () => {
         </main>
         <footer className="flex justify-between items-center mt-24">
           <div className="flex gap-x-5 sm:gap-x-4">
-            <LargeLink href="https://twitter.com/object1037">
+            <LargeLink
+              href="https://twitter.com/object1037"
+              aria-label="link to my Twitter account"
+            >
               <FiTwitter />
             </LargeLink>
-            <LargeLink href="https://github.com/object1037">
+            <LargeLink
+              href="https://github.com/object1037"
+              aria-label="link to my GitHub account"
+            >
               <FiGithub />
             </LargeLink>
           </div>
