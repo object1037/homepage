@@ -35,7 +35,7 @@ const IndexPage = () => {
           </article>
           <article>
             <h2>Links</h2>
-            <ul>
+            <ul className="space-y-4 list-disc list-inside">
               <li>
                 <Link href="https://blog.object1037.dev">Blog</Link>
               </li>
