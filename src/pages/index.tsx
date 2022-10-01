@@ -20,11 +20,11 @@ const IndexPage = () => {
         <link rel="canonical" href="https://object1037.dev" />
       </Head>
       <HeroHeader />
-      <div className="flex flex-col justify-between min-h-screenWithoutHeader px-8 py-24">
+      <div className="flex flex-col justify-between min-h-screenWithoutHeader sm:min-h-[calc(100vh-9rem)] px-8 pt-28 pb-12 sm:pb-24">
         <main className="space-y-12">
           <article>
             <h2>About</h2>
-            <p>
+            <p className="leading-relaxed">
               I&apos;m object1037, a student at the University of Tokyo(B2,{' '}
               <Link href="https://www.ee.t.u-tokyo.ac.jp/">EEIC</Link>), Web
               enthusiast,{' '}
@@ -50,7 +50,7 @@ const IndexPage = () => {
           </article>
         </main>
         <footer className="flex justify-between items-center mt-24">
-          <div className="flex gap-x-4">
+          <div className="flex gap-x-5 sm:gap-x-4">
             <LargeLink href="https://twitter.com/object1037">
               <FiTwitter />
             </LargeLink>

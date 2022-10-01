@@ -13,7 +13,7 @@ export const HeroHeader = () => {
   })
 
   const keywords = ['Web', 'EEIC23', 'UTokyo', 'Pokopea']
-  const starts = [0.02819, 0.66443, 0.28491, 0.15905, 0.06189]
+  const starts = [0.728, 0.443, 0.089, 0.885]
   const circleStyle = [
     'absolute',
     'border',
@@ -36,7 +36,7 @@ export const HeroHeader = () => {
     'z-50',
   ]
   const expandStyle = ['w-full', 'h-full']
-  const shrinkStyle = ['w-40', 'h-36']
+  const shrinkStyle = ['w-36 sm:w-40', 'h-28 sm:h-36']
 
   return (
     <header>
@@ -44,7 +44,7 @@ export const HeroHeader = () => {
       <div
         className={clsx(
           'flex items-center transition-all duration-700 bg-white',
-          shrink ? 'h-36' : 'h-screen'
+          shrink ? 'h-28 sm:h-36' : 'h-screen'
         )}
       >
         <div
@@ -76,14 +76,14 @@ export const HeroHeader = () => {
           <Icon
             className={clsx(
               'stroke-gray-500 dark:stroke-gray-400 transition-all duration-700 max-h-40',
-              shrink ? 'h-24 w-24 justify-self-start' : 'h-1/5'
+              shrink ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start' : 'h-1/5'
             )}
           />
         </div>
         <div
           className={clsx(
             'fixed max-h-[700px] max-w-4xl w-full items-center transition-all duration-700 -translate-y-px bg-white',
-            shrink ? 'h-36' : 'h-screen'
+            shrink ? 'h-28 sm:h-36' : 'h-screen'
           )}
         >
           <h1
