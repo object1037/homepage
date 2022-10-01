@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.zinc,
+        gray: {
+          350: '#c3c3c8',
+          ...colors.zinc,
+        },
       },
       fontFamily: {
         mono: ['JetBrainsMono', ...fontFamily.mono],

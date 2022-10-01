@@ -18,6 +18,7 @@ export const HeroHeader = () => {
     'absolute',
     'border',
     'border-gray-200',
+    'dark:border-gray-700',
     'rounded-full',
     'aspect-square',
     'animate-[spin_24s_linear_infinite]',
@@ -43,7 +44,7 @@ export const HeroHeader = () => {
       <div ref={ref} className="h-px" />
       <div
         className={clsx(
-          'flex items-center transition-all duration-700 bg-gray-50',
+          'flex items-center transition-all duration-700 bg-gray-50 dark:bg-gray-900',
           shrink ? 'h-28 sm:h-36' : 'h-screen'
         )}
       >
@@ -65,7 +66,7 @@ export const HeroHeader = () => {
             >
               <span
                 className={clsx(
-                  'absolute left-1/2 -translate-x-1/2 -translate-y-3 px-3 font-extralight text-gray-500 bg-gray-50 transition-all duration-700',
+                  'absolute left-1/2 -translate-x-1/2 -translate-y-3 px-3 font-extralight text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-900 transition-all duration-700',
                   shrink ? 'text-[0px]' : 'text-base'
                 )}
               >
@@ -77,14 +78,14 @@ export const HeroHeader = () => {
             className={clsx(
               'dark:stroke-gray-400 transition-all duration-700 max-h-40',
               shrink
-                ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start stroke-gray-700'
-                : 'h-1/5 stroke-gray-600'
+                ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start stroke-gray-700 dark:stroke-gray-200'
+                : 'h-1/5 stroke-gray-600 dark:stroke-gray-350'
             )}
           />
         </div>
         <div
           className={clsx(
-            'fixed max-h-[700px] max-w-4xl w-full items-center transition-all duration-700 -translate-y-px bg-gray-50',
+            'fixed max-h-[700px] max-w-4xl w-full items-center transition-all duration-700 -translate-y-px bg-gray-50 dark:bg-gray-900',
             shrink ? 'h-28 sm:h-36' : 'h-screen'
           )}
         >
@@ -92,8 +93,8 @@ export const HeroHeader = () => {
             className={clsx(
               'absolute font-semibold transition-all duration-700',
               shrink
-                ? 'top-1/2 left-full -translate-x-[calc(100%+2rem)] -translate-y-1/2 text-gray-700'
-                : 'top-[58%] left-1/2 -translate-x-1/2 text-gray-600'
+                ? 'top-1/2 left-full -translate-x-[calc(100%+2rem)] -translate-y-1/2 text-gray-700 dark:text-gray-200'
+                : 'top-[58%] left-1/2 -translate-x-1/2 text-gray-600 dark:text-gray-350'
             )}
           >
             object1037
