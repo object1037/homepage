@@ -17,6 +17,7 @@ module.exports = {
       },
       height: {
         screen: 'calc(100vh - 2rem)',
+        dscreen: ['100vh', '100dvh'],
       },
       minHeight: {
         screenWithoutHeader: ['calc(100vh - 6rem)', 'calc(100dvh - 6rem)'],

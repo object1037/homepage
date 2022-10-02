@@ -5,6 +5,8 @@ import { Link } from '../components/Link'
 import { LargeLink } from '../components/LargeLink'
 
 const IndexPage = () => {
+  const listStyle = 'space-y-4 list-disc list-inside'
+
   return (
     <>
       <Head>
@@ -26,17 +28,26 @@ const IndexPage = () => {
             <h2>About</h2>
             <p className="leading-relaxed">
               I&apos;m object1037, a student at the University of Tokyo(B2,{' '}
-              <Link href="https://www.ee.t.u-tokyo.ac.jp/">EEIC</Link>), Web
-              enthusiast,{' '}
-              <Link href="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">
-                Pokopea
-              </Link>{' '}
-              aficionado. Born on the 9th April 2002.
+              <Link href="https://www.ee.t.u-tokyo.ac.jp/">EEIC</Link>). Born on
+              the 9th April 2002.
             </p>
           </article>
           <article>
+            <h2>Interests</h2>
+            <ul className={listStyle}>
+              <li>Web</li>
+              <li>Design</li>
+              <li>
+                <Link href="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">
+                  Pokopea
+                </Link>
+              </li>
+              <li>Keyboard</li>
+            </ul>
+          </article>
+          <article>
             <h2>Links</h2>
-            <ul className="space-y-4 list-disc list-inside">
+            <ul className={listStyle}>
               <li>
                 <Link href="https://blog.object1037.dev">Blog</Link>
               </li>
