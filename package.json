@@ -9,6 +9,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
+    "@next/font": "^13.0.3",
     "clsx": "^1.2.1",
     "next": "^13.0.3",
     "react": "18.2.0",

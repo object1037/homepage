@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        mono: ['JetBrainsMono', ...fontFamily.mono],
+        mono: ['var(--font-jetbrainsmono)', ...fontFamily.mono],
       },
       height: {
         screen: 'calc(100vh - 2rem)',
