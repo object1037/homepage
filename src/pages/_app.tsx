@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     // scroll to top on refresh
-    window.scrollTo(0, 0)
+    window.scrollTo(0, -1)
   }, [pathname])
 
   return (
