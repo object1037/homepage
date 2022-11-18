@@ -1,7 +1,13 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
+import { JetBrains_Mono } from '@next/font/google'
 import { useEffect } from 'react'
+
+const jetbrainsmono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrainsmono',
+})
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter()
@@ -11,5 +17,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     window.scrollTo(0, 0)
   }, [pathname])
 
-  return <Component {...pageProps} />
+  return (
+    <div className={`${jetbrainsmono.variable} font-mono`}>
+      <Component {...pageProps} />
+    </div>
+  )
 }
