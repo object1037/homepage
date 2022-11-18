@@ -38,9 +38,7 @@ const IndexPage = () => {
               <li>Web</li>
               <li>Design</li>
               <li>
-                <Link href="https://www.youtube.com/channel/UC1EB8moGYdkoZQfWHjh7Ivw">
-                  Pokopea
-                </Link>
+                <Link href="https://www.youtube.com/@pokopea">Pokopea</Link>
               </li>
               <li>Keyboard</li>
             </ul>
