@@ -1,11 +1,11 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
-import localFont from '@next/font/local'
+import { JetBrains_Mono } from '@next/font/google'
 import { useEffect } from 'react'
 
-const JetBrainsMono = localFont({
-  src: '../../public/fonts/JetBrainsMono-var.woff2',
+const jetbrainsmono = JetBrains_Mono({
+  subsets: ['latin'],
   variable: '--font-jetbrainsmono',
 })
 
@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, [pathname])
 
   return (
-    <div className={JetBrainsMono.className}>
+    <div className={`${jetbrainsmono.variable} font-mono`}>
       <Component {...pageProps} />
     </div>
   )
