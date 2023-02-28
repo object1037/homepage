@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 const jetbrainsmono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-jetbrainsmono',
+  fallback: ['monospace'],
 })
 
 export default function MyApp({ Component, pageProps }: AppProps) {
