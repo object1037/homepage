@@ -74,7 +74,7 @@ const IndexPage = () => {
             </LargeLink>
           </div>
           <small className="text-gray-500 dark:text-gray-400 text-xs">
-            &copy; 2022 object1037
+            &copy; 2023 object1037
           </small>
         </footer>
       </div>
