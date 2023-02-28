@@ -84,11 +84,11 @@ export const HeroHeader = () => {
           ))}
           <Icon
             className={clsx(
-              'max-h-40 dark:stroke-gray-400',
+              'max-h-40',
               transitionStyle,
               shrink
-                ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start stroke-gray-700 dark:stroke-gray-200'
-                : 'h-1/5 stroke-gray-600 dark:stroke-gray-350'
+                ? 'h-20 w-20 sm:h-24 sm:w-24 justify-self-start stroke-gray-900 dark:stroke-gray-100'
+                : 'h-1/5 stroke-gray-700 dark:stroke-gray-300'
             )}
           />
         </div>
@@ -104,8 +104,8 @@ export const HeroHeader = () => {
               'absolute font-semibold',
               transitionStyle,
               shrink
-                ? 'top-1/2 left-full -translate-x-[calc(100%+2rem)] -translate-y-1/2 text-gray-700 dark:text-gray-200'
-                : 'top-[58%] left-1/2 -translate-x-1/2 text-gray-600 dark:text-gray-350'
+                ? 'top-1/2 left-full -translate-x-[calc(100%+2rem)] -translate-y-1/2 text-gray-900 dark:text-gray-100'
+                : 'top-[58%] left-1/2 -translate-x-1/2 text-gray-700 dark:text-gray-300'
             )}
           >
             object1037
