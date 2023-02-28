@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
-import { JetBrains_Mono } from '@next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 import { useEffect } from 'react'
 
 const jetbrainsmono = JetBrains_Mono({
