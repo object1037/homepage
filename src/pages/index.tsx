@@ -27,7 +27,7 @@ const IndexPage = () => {
           <article>
             <h2>About</h2>
             <p className="leading-relaxed">
-              I&apos;m object1037, a student at the University of Tokyo(B2,{' '}
+              I&apos;m object1037, a student at the University of Tokyo(B3,{' '}
               <Link href="https://www.ee.t.u-tokyo.ac.jp/">EEIC</Link>). Born on
               the 9th April 2002.
             </p>
