@@ -1,20 +1,11 @@
-import css from './my-element.css?inline'
-import { styledHtml } from './utils/html'
+import html from './components/my-element.html?raw'
+import css from './styles/my-element.css?inline'
+import { render } from './utils/render'
 
 class MyElement extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: 'open' })
-    this.render()
-  }
-  render() {
-    if (!this.shadowRoot) return
-    this.shadowRoot.innerHTML = styledHtml(
-      css,
-      `
-    <p>Hello,Vanilla</p>
-    <slot></slot>
-    `,
-    )
+    render({ shadow: this.shadowRoot, html, css })
   }
 }
 
