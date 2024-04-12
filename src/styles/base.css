@@ -1,0 +1,12 @@
+body {
+  background-color: #fafafa;
+  color: #171717;
+}
+
+header,
+main,
+footer {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
