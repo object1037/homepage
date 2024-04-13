@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::slotted(svg) {
+  width: 6rem;
+  height: 6rem;
+}
