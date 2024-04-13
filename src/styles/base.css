@@ -1,19 +1,21 @@
 body {
   background-color: #fafafa;
   color: #171717;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-header,
+hero-header,
 main,
 my-footer {
   max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
-my-footer {
+main {
   margin-top: 6rem;
   margin-bottom: 6rem;
 }

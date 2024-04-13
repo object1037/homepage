@@ -13,10 +13,11 @@ export const render = ({
   css?: string
 }) => {
   if (!shadow) return
+  shadow.adoptedStyleSheets = [resetSheet]
   if (css) {
     const sheet = new CSSStyleSheet()
     sheet.replaceSync(css)
-    shadow.adoptedStyleSheets = [resetSheet, sheet]
+    shadow.adoptedStyleSheets.push(sheet)
   }
   shadow.innerHTML = html
 }
