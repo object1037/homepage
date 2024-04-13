@@ -21,7 +21,7 @@ footer {
   align-items: center;
 }
 
-.links {
+address {
   display: flex;
   column-gap: 1.25rem;
 }
