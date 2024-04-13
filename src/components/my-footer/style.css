@@ -1,4 +1,4 @@
-.feather {
+::slotted(svg) {
   width: 24px;
   height: 24px;
   stroke: currentColor;
@@ -6,4 +6,7 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
+}
+::slotted(svg:hover) {
+  stroke: red;
 }
