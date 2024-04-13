@@ -8,9 +8,9 @@ import { MyFooter } from './components/my-footer'
 customElements.define('hero-header', HeroHeader)
 customElements.define('my-footer', MyFooter)
 
-await Promise.all([
+Promise.all([
   customElements.whenDefined('hero-header'),
   customElements.whenDefined('my-footer'),
-])
-
-document.body.classList.add('ready')
+]).then(() => {
+  document.body.classList.add('ready')
+})
