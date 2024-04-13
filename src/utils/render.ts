@@ -1,3 +1,8 @@
+import reset from '../styles/reset.css?inline'
+
+const resetSheet = new CSSStyleSheet()
+resetSheet.replaceSync(reset)
+
 export const render = ({
   shadow,
   html,
@@ -11,7 +16,7 @@ export const render = ({
   if (css) {
     const sheet = new CSSStyleSheet()
     sheet.replaceSync(css)
-    shadow.adoptedStyleSheets = [sheet]
+    shadow.adoptedStyleSheets = [resetSheet, sheet]
   }
   shadow.innerHTML = html
 }
