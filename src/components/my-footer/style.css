@@ -7,9 +7,6 @@
   stroke-linejoin: round;
   fill: none;
 }
-::slotted(svg:hover) {
-  stroke: red;
-}
 
 :host {
   display: block;
@@ -19,9 +16,27 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 6rem;
 }
 
 address {
   display: flex;
   column-gap: 1.25rem;
+}
+
+a {
+  padding: 1rem;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+a:hover {
+  color: #a3a3a3;
+}
+
+::slotted(small) {
+  color: #737373;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
