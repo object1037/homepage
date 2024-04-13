@@ -13,7 +13,7 @@ html,
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
   line-height: 1.5;
-  font-family: var(--font-fallback);
+  font-family: "JetBrains Mono", var(--font-fallback);
 }
 
 *,
