@@ -1,3 +1,3 @@
-import { MyElement } from './components/my-element'
+import { MyFooter } from './components/my-footer'
 
-customElements.define('my-element', MyElement)
+customElements.define('my-footer', MyFooter, { extends: 'footer' })
