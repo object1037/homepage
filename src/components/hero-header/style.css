@@ -1,7 +1,8 @@
 :host, ::slotted(*) {
   display: block;
-  transition: all 1000ms, opacity 700ms;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
 }
 
 :host {
@@ -10,6 +11,7 @@
   pointer-events: none;
   inset: 2rem;
   height: calc(100svh - 4rem);
+  background-color: inherit;
 }
 
 ::slotted(svg) {
@@ -30,6 +32,8 @@
 
 :host(.ready) {
   --size: 6rem;
+  background-color: transparent;
+
   ::slotted(svg) {
     top: 0;
     left: 0;
