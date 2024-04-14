@@ -1,7 +1,8 @@
 import reset from '../styles/reset.css?inline'
 
 const resetSheet = new CSSStyleSheet()
-resetSheet.replaceSync(reset)
+resetSheet.replaceSync(`@layer reset {${reset}}`)
+document.adoptedStyleSheets = [resetSheet]
 
 export const render = ({
   shadow,

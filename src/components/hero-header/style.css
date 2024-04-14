@@ -1,14 +1,43 @@
-:host {
+:host, ::slotted(*) {
   display: block;
+  transition: all 1000ms, opacity 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+:host {
+  --size: 8.75rem;
+  position: fixed;
+  pointer-events: none;
+  inset: 2rem;
+  height: calc(100svh - 4rem);
 }
 
 ::slotted(svg) {
-  width: 6rem;
-  height: 6rem;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: calc(50% - var(--size) / 2);
+  left: calc(50% - var(--size) / 2);
+}
+
+::slotted(h1) {
+  position: absolute;
+  pointer-events: auto;
+  top: calc(50% + 3.75rem);
+  right: 50%;
+  transform: translateX(50%);
+}
+
+:host(.ready) {
+  --size: 6rem;
+  ::slotted(svg) {
+    top: 0;
+    left: 0;
+  }
+
+  ::slotted(h1) {
+    top: calc(var(--size) / 2);
+    right: 0;
+    transform: translateY(-50%);
+  }
 }
