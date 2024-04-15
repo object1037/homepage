@@ -1,0 +1,39 @@
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+svg {
+  stroke-dasharray: 100 0;
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+span {
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 2s;
+  width: max-content;
+  position: absolute;
+  top: -12rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+hero-header.diminished {
+  svg {
+    stroke-dasharray: 2 98;
+    stroke-dashoffset: 1;
+
+    &> :not(#eyes) {
+      transition: opacity 250ms ease-out 1.5s;
+      opacity: 0;
+    }
+  }
+
+  span {
+    opacity: 1;
+    font-size: 1rem;
+  }
+}

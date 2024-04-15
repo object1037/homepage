@@ -6,12 +6,10 @@ export class HeroHeader extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: 'open' })
     render({ shadow: this.shadowRoot, html, css })
-    if (this.hasAttribute('notransition')) {
-      return
-    }
+
     setTimeout(
       () => {
-        this.classList.add('ready')
+        this.classList.add(this.getAttribute('resolveClass') ?? 'ready')
       },
       Number.parseInt(this.getAttribute('delay') ?? '0'),
     )
