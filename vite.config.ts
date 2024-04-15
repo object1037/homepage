@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
 const noscriptStylePlugin = () => {
@@ -24,6 +25,10 @@ const noscriptStylePlugin = () => {
 export default defineConfig({
   build: {
     rollupOptions: {
+      input: {
+        index: resolve(__dirname, 'index.html'),
+        notFound: resolve(__dirname, '404.html'),
+      },
       output: {
         manualChunks(id) {
           if (id.includes('noscript.css')) {
