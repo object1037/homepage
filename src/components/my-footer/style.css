@@ -10,7 +10,7 @@ footer {
 
 address {
   display: flex;
-  column-gap: 1.25rem;
+  column-gap: 0.625rem;
 }
 
 a {
@@ -22,6 +22,9 @@ a {
 
 a:hover {
   color: #a3a3a3;
+  @media (prefers-color-scheme: dark) {
+    color: #737373;
+  }
 }
 
 ::slotted(svg) {
