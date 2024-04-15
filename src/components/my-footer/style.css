@@ -10,7 +10,7 @@ footer {
 
 address {
   display: flex;
-  column-gap: 1.25rem;
+  column-gap: 0.625rem;
 }
 
 a {
