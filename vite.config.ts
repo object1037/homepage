@@ -24,6 +24,9 @@ const noscriptStylePlugin = () => {
 
 export default defineConfig({
   build: {
+    modulePreload: {
+      polyfill: false,
+    },
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
