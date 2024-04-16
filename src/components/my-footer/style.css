@@ -27,7 +27,7 @@ a:hover {
   }
 }
 
-::slotted(svg) {
+svg {
   width: 1.875rem;
   height: 1.875rem;
   stroke: currentColor;
@@ -37,7 +37,7 @@ a:hover {
   fill: none;
 }
 
-::slotted(small) {
+small {
   color: #737373;
   font-size: 0.75rem;
   line-height: 1rem;
