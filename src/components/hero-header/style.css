@@ -1,12 +1,7 @@
-:host, ::slotted(*) {
-  display: block;
-  transition-property: all;
-  transition-timing-function: var(--easing);
-  transition-duration: 1000ms;
-}
-
 :host {
-  --size: 8.75rem;
+  --icon-size: 8.75rem;
+  --duration: 1000ms;
+  display: block;
   position: fixed;
   pointer-events: none;
   inset: 0 2rem;
@@ -15,34 +10,30 @@
   background-image: linear-gradient(to bottom, var(--bg), var(--bg) 6rem, transparent 12rem);
 }
 
-::slotted(svg) {
+:host, ::slotted(*) {
+  transition-duration: var(--duration);
+  transition-timing-function: var(--easing);
+}
+
+::slotted(*) {
   position: absolute;
-  width: var(--size);
-  height: var(--size);
-  top: calc(50% - var(--size) / 2);
-  left: calc(50% - var(--size) / 2);
+}
+
+::slotted(svg) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  top: calc(50% - var(--icon-size) / 2);
+  left: calc(50% - var(--icon-size) / 2);
 }
 
 ::slotted(h1) {
-  position: absolute;
   pointer-events: auto;
   top: calc(50% + 3.75rem);
   right: 50%;
-  transform: translateX(50%);
+  translate: 50%;
 }
 
 :host(.end) {
-  --size: 6rem;
   background-color: transparent;
-
-  ::slotted(svg) {
-    top: 2rem;
-    left: 0;
-  }
-
-  ::slotted(h1) {
-    top: calc(2rem + var(--size) / 2);
-    right: 0;
-    transform: translateY(-50%);
-  }
+  transition-property: background-color;
 }

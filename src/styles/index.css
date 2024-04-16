@@ -33,16 +33,34 @@ body > * {
   margin-right: auto;
 }
 
+main {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+
+  @media screen and (min-width: 56rem) {
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+  }
+}
+
 hero-header:not(:defined) {
   background-color: var(--bg);
 }
 
-main {
-  margin-top: 10rem;
-  margin-bottom: 4rem;
-  @media screen and (min-width: 56rem) {
-    margin-top: 12rem;
-    margin-bottom: 6rem;
+hero-header.end {
+  --icon-size: 6rem;
+
+  svg {
+    top: 2rem;
+    left: 0;
+    transition-property: top, left, width, height;
+  }
+
+  h1 {
+    top: calc(2rem + var(--icon-size) / 2);
+    right: 0;
+    translate: 0 -50%;
+    transition-property: top, right, translate;
   }
 }
 
