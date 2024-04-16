@@ -1,4 +1,4 @@
-:root, hero-header {
+:root, hero-header, my-footer {
   --color-light: #fafafa;
   --color-dark: #171717;
   --bg: var(--color-light);
@@ -15,9 +15,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 2rem;
-  transition-property: opacity;
-  transition-timing-function: var(--easing);
-  transition-duration: 500ms;
+  transition: opacity 500ms var(--easing);
   @media screen and (min-width: 56rem) {
     padding-bottom: 3rem;
   }
@@ -89,9 +87,7 @@ p {
 
 a {
   border-bottom: solid 1px #d4d4d4;
-  transition-property: border-color;
-  transition-timing-function: var(--easing);
-  transition-duration: 150ms;
+  transition: border-color 150ms var(--easing);
   &:hover {
     border-bottom-color: #262626;
   }

@@ -15,9 +15,7 @@ address {
 
 a {
   padding: 1rem;
-  transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition: color var(--easing) 150ms;
 }
 
 a:hover {
