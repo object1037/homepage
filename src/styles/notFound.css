@@ -29,6 +29,7 @@ h1 {
 }
 
 h2 {
+  opacity: 0;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -45,5 +46,9 @@ hero-header.end {
     transition-duration: var(--duration);
     transition-timing-function: var(--easing);
     transition-delay: 0ms, 600ms
+  }
+  h2 {
+    opacity: 1;
+    transition: opacity var(--duration) var(--easing) var(--duration);
   }
 }
