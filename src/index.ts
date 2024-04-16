@@ -13,7 +13,4 @@ Promise.all([
   customElements.whenDefined('my-footer'),
 ]).then(() => {
   document.body.classList.add('ready')
-  setTimeout(() => {
-    document.querySelector('hero-header')?.classList.add('ready')
-  }, 1000)
 })

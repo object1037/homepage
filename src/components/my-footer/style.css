@@ -15,9 +15,7 @@ address {
 
 a {
   padding: 1rem;
-  transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition: color var(--easing) 150ms;
 }
 
 a:hover {
@@ -27,7 +25,7 @@ a:hover {
   }
 }
 
-::slotted(svg) {
+svg {
   width: 1.875rem;
   height: 1.875rem;
   stroke: currentColor;
@@ -35,10 +33,4 @@ a:hover {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-}
-
-::slotted(small) {
-  color: #737373;
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
