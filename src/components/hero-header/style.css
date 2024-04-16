@@ -19,14 +19,14 @@
   position: absolute;
 }
 
-::slotted(svg) {
+::slotted([slot="icon"]) {
   width: var(--icon-size);
   height: var(--icon-size);
   top: calc(50% - var(--icon-size) / 2);
   left: calc(50% - var(--icon-size) / 2);
 }
 
-::slotted(h1) {
+::slotted([slot="heading"]) {
   pointer-events: auto;
   top: calc(50% + 3.75rem);
   right: 50%;
