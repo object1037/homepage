@@ -9,7 +9,7 @@ export class HeroHeader extends HTMLElement {
 
     setTimeout(
       () => {
-        this.classList.add(this.getAttribute('resolveClass') ?? 'ready')
+        this.classList.add('end')
       },
       Number.parseInt(this.getAttribute('delay') ?? '0'),
     )

@@ -1,17 +1,25 @@
+:root, hero-header {
+  --color-light: #fafafa;
+  --color-dark: #171717;
+  --bg: var(--color-light);
+  --text: var(--color-dark);
+  --easing: cubic-bezier(0.4, 0, 0.2, 1);
+  @media (prefers-color-scheme: dark) {
+    --bg: var(--color-dark);
+    --text: var(--color-light);
+  }
+}
+
 body {
   opacity: 0;
-  background-color: #fafafa;
-  color: #171717;
+  background-color: var(--bg);
+  color: var(--text);
   padding: 2rem;
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--easing);
   transition-duration: 500ms;
   @media screen and (min-width: 56rem) {
     padding-bottom: 3rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    background-color: #171717;
-    color: #fafafa;
   }
 }
 
@@ -26,7 +34,7 @@ body > * {
 }
 
 hero-header:not(:defined) {
-  background-color: inherit;
+  background-color: var(--bg);
 }
 
 main {
@@ -64,7 +72,7 @@ p {
 a {
   border-bottom: solid 1px #d4d4d4;
   transition-property: border-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--easing);
   transition-duration: 150ms;
   &:hover {
     border-bottom-color: #262626;
