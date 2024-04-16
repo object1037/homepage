@@ -1,4 +1,4 @@
-:root, hero-header {
+:root {
   --color-light: #fafafa;
   --color-dark: #171717;
   --bg: var(--color-light);
