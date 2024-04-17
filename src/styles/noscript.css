@@ -14,3 +14,7 @@ hero-header {
 svg {
   width: 6rem;
 }
+
+my-footer {
+  display: block;
+}
