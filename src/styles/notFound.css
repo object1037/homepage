@@ -4,7 +4,6 @@
   --bg: var(--color-light);
   --text: var(--color-dark);
   --easing: cubic-bezier(0.4, 0, 0.2, 1);
-
   @media (prefers-color-scheme: dark) {
     --bg: var(--color-dark);
     --text: var(--color-light);
@@ -52,4 +51,8 @@ hero-header.end {
     opacity: 1;
     transition: opacity var(--duration) var(--easing) var(--duration);
   }
+}
+
+#hair {
+  fill: var(--fill, none);
 }

@@ -62,6 +62,10 @@ hero-header.end {
   }
 }
 
+#hair {
+  fill: var(--fill, none);
+}
+
 h1 {
   font-weight: 700;
 }
