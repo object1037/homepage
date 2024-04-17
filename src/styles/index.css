@@ -1,4 +1,4 @@
-:root, hero-header, my-footer {
+:root {
   --color-light: #fafafa;
   --color-dark: #171717;
   --bg: var(--color-light);
@@ -60,6 +60,10 @@ hero-header.end {
     translate: 0 -50%;
     transition-property: top, right, translate;
   }
+}
+
+#hair {
+  fill: var(--fill, none);
 }
 
 h1 {
