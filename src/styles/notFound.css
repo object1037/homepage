@@ -45,7 +45,7 @@ hero-header.end {
     transition-property: stroke-dasharray, opacity;
     transition-duration: var(--duration);
     transition-timing-function: var(--easing);
-    transition-delay: 0ms, 600ms
+    transition-delay: 0ms, 600ms;
   }
   h2 {
     opacity: 1;
