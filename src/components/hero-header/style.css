@@ -7,10 +7,16 @@
   inset: 0 2rem;
   height: 100svh;
   background-color: var(--bg);
-  background-image: linear-gradient(to bottom, var(--bg), var(--bg) 6rem, transparent 12rem);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg),
+    var(--bg) 6rem,
+    transparent 12rem
+  );
 }
 
-:host(.end), ::slotted(*) {
+:host(.end),
+::slotted(*) {
   transition-duration: var(--duration);
   transition-timing-function: var(--easing);
 }
