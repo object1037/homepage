@@ -15,7 +15,7 @@ hero-header {
 
 my-icon {
   width: 6rem;
-  content: url('/favicon.svg');
+  content: url("/favicon.svg");
 }
 
 my-footer {
