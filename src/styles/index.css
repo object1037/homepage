@@ -48,7 +48,7 @@ hero-header:not(:defined) {
 hero-header.end {
   --icon-size: 6rem;
 
-  svg {
+  my-icon {
     top: 2rem;
     left: 0;
     transition-property: top, left, width, height;
@@ -62,7 +62,7 @@ hero-header.end {
   }
 }
 
-#hair {
+my-icon::part(hair) {
   fill: var(--fill, none);
 }
 

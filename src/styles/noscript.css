@@ -2,6 +2,8 @@
 
 body {
   opacity: 1 !important;
+  --bg: #fff5f6;
+  --fill: #ffbac1;
 }
 
 hero-header {
@@ -11,8 +13,9 @@ hero-header {
   margin-bottom: -6rem;
 }
 
-svg {
+my-icon {
   width: 6rem;
+  content: url('/favicon.svg');
 }
 
 my-footer {
