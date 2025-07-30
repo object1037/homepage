@@ -41,31 +41,6 @@ main {
   }
 }
 
-hero-header:not(:defined) {
-  background-color: var(--bg);
-}
-
-hero-header.end {
-  --icon-size: 6rem;
-
-  svg {
-    top: 2rem;
-    left: 0;
-    transition-property: top, left, width, height;
-  }
-
-  h1 {
-    top: calc(2rem + var(--icon-size) / 2);
-    right: 0;
-    translate: 0 -50%;
-    transition-property: top, right, translate;
-  }
-}
-
-#hair {
-  fill: var(--fill, none);
-}
-
 h1 {
   font-weight: 700;
 }
@@ -97,6 +72,7 @@ a {
   }
   @media (prefers-color-scheme: dark) {
     border-bottom-color: #525252;
+    /* biome-ignore lint/style/noDescendingSpecificity: will be transformed by postcss-nested */
     &:hover {
       border-bottom-color: #e5e5e5;
     }
@@ -107,4 +83,29 @@ small {
   color: #737373;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+hero-header:not(:defined) {
+  background-color: var(--bg);
+}
+
+hero-header.end {
+  --icon-size: 6rem;
+
+  my-icon {
+    top: 2rem;
+    left: 0;
+    transition-property: top, left, width, height;
+  }
+
+  h1 {
+    top: calc(2rem + var(--icon-size) / 2);
+    right: 0;
+    translate: 0 -50%;
+    transition-property: top, right, translate;
+  }
+}
+
+my-icon::part(hair) {
+  fill: var(--fill, none);
 }

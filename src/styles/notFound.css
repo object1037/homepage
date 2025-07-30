@@ -34,12 +34,12 @@ h2 {
   font-weight: 600;
 }
 
-svg :not(#eyes) {
+my-icon::part(not-eyes) {
   stroke-dasharray: 30 0;
 }
 
 hero-header.end {
-  svg :not(#eyes) {
+  my-icon::part(not-eyes) {
     stroke-dasharray: 10 20;
     opacity: 0;
     transition-property: stroke-dasharray, opacity;
@@ -53,6 +53,6 @@ hero-header.end {
   }
 }
 
-#hair {
+my-icon::part(hair) {
   fill: var(--fill, none);
 }
