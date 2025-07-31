@@ -30,6 +30,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
+        works: resolve(__dirname, 'works.html'),
         notFound: resolve(__dirname, '404.html'),
       },
       output: {

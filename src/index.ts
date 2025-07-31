@@ -1,6 +1,7 @@
 import { HeroHeader } from './components/hero-header'
 import { MyFooter } from './components/my-footer'
 import { MyIcon } from './components/my-icon'
+import { MyWork } from './components/my-work'
 
 // Test FOUC
 // const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -9,11 +10,13 @@ import { MyIcon } from './components/my-icon'
 customElements.define('hero-header', HeroHeader)
 customElements.define('my-footer', MyFooter)
 customElements.define('my-icon', MyIcon)
+customElements.define('my-work', MyWork)
 
 Promise.all([
   customElements.whenDefined('hero-header'),
   customElements.whenDefined('my-footer'),
   customElements.whenDefined('my-icon'),
+  customElements.whenDefined('my-work'),
 ]).then(() => {
   document.body.classList.add('ready')
 })
