@@ -17,7 +17,7 @@ const devPlugin: () => Plugin = () => {
             const { render } = (await server.ssrLoadModule(
               './lib/entry-server.ts',
             )) as { render: Render }
-            const { html: appHtml, status } = await render(url)
+            const { appHtml, status } = await render(url)
             const html = transformed.replace('<!--outlet-->', appHtml)
 
             res.statusCode = status
@@ -31,7 +31,7 @@ const devPlugin: () => Plugin = () => {
           }
         })
       }
-    }
+    },
   }
 }
 

@@ -7,8 +7,8 @@
     "dev": "node lib/devServer.ts",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "check": "biome ci ./src",
-    "fmt": "biome format --write ./src"
+    "check": "biome ci ./src ./styles ./lib",
+    "fmt": "biome format --write ./src ./styles ./lib"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.3",
