@@ -5,4 +5,7 @@ import { ssgPlugin } from './lib/ssgPlugin.ts'
 export default defineConfig({
   appType: 'custom',
   plugins: [ssgPlugin(), react()],
+  environments: {
+    server: {},
+  },
 })
