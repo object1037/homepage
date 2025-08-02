@@ -1,30 +1,31 @@
 @import "reset.css" layer(reset);
 
 :root {
-  --gray-50: oklch(0.985 0 0);
-  --gray-100: oklch(0.97 0 0);
-  --gray-200: oklch(0.922 0 0);
-  --gray-300: oklch(0.87 0 0);
-  --gray-400: oklch(0.708 0 0);
-  --gray-500: oklch(0.556 0 0);
-  --gray-600: oklch(0.439 0 0);
-  --gray-700: oklch(0.371 0 0);
-  --gray-800: oklch(0.269 0 0);
-  --gray-900: oklch(0.205 0 0);
-  --gray-950: oklch(0.145 0 0);
-
-  --bg: var(--gray-50);
-  --fg: var(--gray-900);
-  --color-border: var(--gray-300);
-  --color-border-hover: var(--gray-800);
-
   --easing: cubic-bezier(0.4, 0, 0.2, 1);
 
+  --neutral-50: oklch(0.985 0 0);
+  --neutral-100: oklch(0.97 0 0);
+  --neutral-200: oklch(0.922 0 0);
+  --neutral-300: oklch(0.87 0 0);
+  --neutral-400: oklch(0.708 0 0);
+  --neutral-500: oklch(0.556 0 0);
+  --neutral-600: oklch(0.439 0 0);
+  --neutral-700: oklch(0.371 0 0);
+  --neutral-800: oklch(0.269 0 0);
+  --neutral-900: oklch(0.205 0 0);
+  --neutral-950: oklch(0.145 0 0);
+  
+
+  --bg: var(--neutral-50);
+  --sub-bg: var(--neutral-300);
+  --sub-fg: var(--neutral-500);
+  --fg: var(--neutral-900);
+
   @media (prefers-color-scheme: dark) {
-    --bg: var(--gray-900);
-    --fg: var(--gray-50);
-    --color-border: var(--gray-600);
-    --color-border-hover: var(--gray-200);
+    --bg: var(--neutral-900);
+    --sub-bg: var(--neutral-500);
+    --sub-fg: var(--neutral-300);
+    --fg: var(--neutral-50);
   }
 }
 
@@ -78,16 +79,16 @@ p {
 }
 
 a {
-  border-bottom: solid 1px var(--color-border);
+  border-bottom: solid 1px var(--sub-bg);
   transition: border-color 150ms var(--easing);
 
   &:hover {
-    border-bottom-color: var(--color-border-hover);
+    border-bottom-color: var(--fg);
   }
 }
 
 small {
-  color: var(--gray-500);
+  color: var(--sub-fg);
   font-size: 0.75rem;
   line-height: 1rem;
 }
