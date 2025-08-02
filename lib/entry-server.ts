@@ -19,3 +19,7 @@ export const render = async (url: string) => {
 }
 
 export type Render = typeof render
+
+if (import.meta.hot) {
+  import.meta.hot.accept()
+}

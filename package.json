@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "node lib/build.ts",
+    "build": "vite build",
     "preview": "vite preview",
     "check": "biome ci ./src ./styles ./lib",
     "fmt": "biome format --write ./src ./styles ./lib"
