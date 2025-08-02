@@ -3,6 +3,7 @@ import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react'
 import {
   isRunnableDevEnvironment,
+  type ModuleNode,
   type Plugin,
   runnerImport,
   type ViteDevServer,
@@ -15,6 +16,20 @@ export const ssgPlugin: () => Plugin = () => {
 
   return {
     name: 'ssg-plugin',
+
+    handleHotUpdate({ server, modules, timestamp }) {
+      const invalidatedModules = new Set<ModuleNode>()
+      for (const mod of modules) {
+        server.moduleGraph.invalidateModule(
+          mod,
+          invalidatedModules,
+          timestamp,
+          true,
+        )
+      }
+      server.ws.send({ type: 'full-reload' })
+      return []
+    },
 
     generateBundle: {
       order: 'post',
