@@ -5,6 +5,12 @@ import { ssgPlugin } from './lib/ssgPlugin.ts'
 export default defineConfig({
   appType: 'custom',
   plugins: [ssgPlugin(), react()],
+  css: {
+    transformer: 'lightningcss',
+  },
+  build: {
+    cssMinify: 'lightningcss',
+  },
   environments: {
     server: {},
   },
