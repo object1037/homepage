@@ -19,12 +19,7 @@ export const ssgPlugin: () => Plugin = () => {
     generateBundle: {
       order: 'post',
       async handler(_options, bundle) {
-        const routesToPrerender = await readdir('./src/pages').then((files) => {
-          return files.map((file) => {
-            const name = file.replace(/\.tsx?$/, '')
-            return name === 'index' ? '/' : `/${name}`
-          })
-        })
+        const filesToPrerender = await readdir('./src/pages')
         const template = await readFile(indexPath, 'utf-8')
 
         const {
@@ -33,13 +28,12 @@ export const ssgPlugin: () => Plugin = () => {
           plugins: [react()],
         })
 
-        for (const url of routesToPrerender) {
-          console.log(`Pre-rendering: ${url}`)
-          const fileName =
-            url === '/' ? 'index.html' : `${url.substring(1)}.html`
-          const bundleForFile = bundle[fileName]
+        for (const fileName of filesToPrerender) {
+          const htmlFileName = fileName.replace(/\.tsx$/, '.html')
+          const bundleForFile = bundle[htmlFileName]
+          console.log(`Pre-rendering: ${htmlFileName}`)
 
-          const { appHtml } = await render(url)
+          const { appHtml } = await render(`/${fileName}`)
           const html = template.replace(`<!--outlet-->`, appHtml)
 
           if (bundleForFile && bundleForFile.type === 'asset') {
@@ -47,7 +41,7 @@ export const ssgPlugin: () => Plugin = () => {
           } else {
             this.emitFile({
               type: 'asset',
-              fileName: fileName,
+              fileName: htmlFileName,
               source: html,
             })
           }
@@ -69,12 +63,13 @@ export const ssgPlugin: () => Plugin = () => {
             }
 
             const url = req.originalUrl ?? ''
+            const fileName = url === '/' ? '/index.tsx' : `${url}.tsx`
             const template = await readFile(indexPath, 'utf-8')
             const transformed = await server.transformIndexHtml(url, template)
             const { render } = (await serverEnv.runner.import(entryPath)) as {
               render: Render
             }
-            const { appHtml, status } = await render(url)
+            const { appHtml, status } = await render(fileName)
             const html = transformed.replace('<!--outlet-->', appHtml)
 
             res.statusCode = status

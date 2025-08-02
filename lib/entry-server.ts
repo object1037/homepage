@@ -1,7 +1,6 @@
 import { renderToStaticMarkup } from 'react-dom/server'
 
-export const render = async (url: string) => {
-  const fileName = url === '/' ? '/index.tsx' : `${url}.tsx`
+export const render = async (fileName: string) => {
   const comps = import.meta.glob<{ default: () => React.ReactNode }>(
     '../src/pages/**/*.tsx',
     { eager: true },
