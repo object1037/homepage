@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "wrangler dev",
     "check": "biome ci ./src ./styles ./lib",
     "fmt": "biome format --write ./src ./styles ./lib"
   },
@@ -20,7 +20,8 @@
     "postcss-nested": "^7.0.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.6"
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6",
+    "wrangler": "^4.27.0"
   }
 }

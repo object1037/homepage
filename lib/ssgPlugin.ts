@@ -20,7 +20,14 @@ export const ssgPlugin: () => Plugin = () => {
       order: 'post',
       async handler(_options, bundle) {
         const filesToPrerender = await readdir('./src/pages')
-        const template = await readFile(indexPath, 'utf-8')
+        const templateBundle = bundle['index.html']
+        if (!templateBundle || templateBundle.type !== 'asset') {
+          throw new Error('index.html asset not found in bundle')
+        }
+        const template = templateBundle.source
+        if (typeof template !== 'string') {
+          throw new Error('index.html source is not a string')
+        }
 
         const {
           module: { render },
