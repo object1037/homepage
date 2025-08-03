@@ -10,6 +10,9 @@ export default defineConfig({
   },
   build: {
     cssMinify: 'lightningcss',
+    modulePreload: {
+      polyfill: false,
+    },
   },
   environments: {
     server: {},

@@ -73,8 +73,14 @@ export const ssgPlugin: () => Plugin = () => {
 
     configureServer(server: ViteDevServer) {
       const serverEnv = server.environments.server
+      const JSON_ENDP = '/.well-known/appspecific/com.chrome.devtools.json'
 
       return () => {
+        server.middlewares.use(JSON_ENDP, (_req, res) => {
+          res.statusCode = 404
+          res.end()
+        })
+
         server.middlewares.use(async (req, res, next) => {
           try {
             if (serverEnv === undefined) {
