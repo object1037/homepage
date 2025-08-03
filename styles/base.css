@@ -1,6 +1,9 @@
 :root {
   --easing: cubic-bezier(0.4, 0, 0.2, 1);
 
+  --pad-x: 2rem;
+  --icon-size: 8.75rem;
+
   --neutral-50: oklch(0.985 0 0);
   --neutral-100: oklch(0.97 0 0);
   --neutral-200: oklch(0.922 0 0);
@@ -29,7 +32,7 @@
 body {
   background-color: var(--bg);
   color: var(--fg);
-  padding: 2rem;
+  padding: var(--pad-x);
 
   @media screen and (min-width: 56rem) {
     padding-bottom: 3rem;
