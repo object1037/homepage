@@ -1,0 +1,16 @@
+header {
+  --icon-size: 6rem;
+  background-color: transparent;
+  transition-property: background-color;
+
+  svg {
+    top: 2rem;
+    left: 0;
+  }
+
+  h1 {
+    top: calc(2rem + var(--icon-size) / 2);
+    right: 0;
+    translate: 0 -50%;
+  }
+}
