@@ -1,17 +1,12 @@
 header {
   position: fixed;
   pointer-events: none;
-  inset: 0 var(--pad-x);
+  inset: 0;
   height: 100svh;
   transition-duration: 1000ms;
   transition-timing-function: var(--easing);
+  transition-property: background-color;
   background-color: var(--bg);
-  background-image: linear-gradient(
-    to bottom,
-    var(--bg),
-    var(--bg) 6rem,
-    transparent 12rem
-  );
 
   svg,
   h1 {
@@ -37,21 +32,33 @@ header {
     right: 50%;
     translate: 50%;
   }
+
+  #hair {
+    transition-duration: inherit;
+    transition-timing-function: inherit;
+    transition-property: fill;
+    fill: var(--hair, transparent);
+  }
 }
 
 header.end {
   --icon-size: 6rem;
   background-color: transparent;
-  transition-property: background-color;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg),
+    var(--bg) 6rem,
+    transparent 12rem
+  );
 
   svg {
-    top: 2rem;
-    left: 0;
+    top: var(--pad-x);
+    left: var(--pad-x);
   }
 
   h1 {
-    top: calc(2rem + var(--icon-size) / 2);
-    right: 0;
+    top: calc(var(--pad-x) + var(--icon-size) / 2);
+    right: var(--pad-x);
     translate: 0 -50%;
   }
 }
