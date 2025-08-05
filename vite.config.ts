@@ -1,45 +1,31 @@
-import { resolve } from 'node:path'
+import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-
-const noscriptStylePlugin = () => {
-  return {
-    name: 'noscript-style',
-    transformIndexHtml(html: string) {
-      const noscriptRegex = /<noscript>.*?<\/noscript>/s
-      const linkRegex = /<link[^>]*?href="[^"]*noscript[^"]*"[^>]*?>/
-      const link = html.match(linkRegex)?.[0]
-      const newHtml = html.replace(noscriptRegex, '').replace(linkRegex, '')
-      return {
-        html: newHtml,
-        tags: [
-          {
-            tag: 'noscript',
-            children: link,
-          },
-        ],
-      }
-    },
-  }
-}
+import { noscriptPlugin } from './lib/noscriptPlugin.ts'
+import { ssgPlugin } from './lib/ssgPlugin.ts'
 
 export default defineConfig({
+  appType: 'custom',
+  plugins: [noscriptPlugin(), ssgPlugin(), react()],
+  environments: {
+    server: {},
+  },
+  css: {
+    transformer: 'lightningcss',
+  },
   build: {
+    cssMinify: 'lightningcss',
     modulePreload: {
       polyfill: false,
     },
     rollupOptions: {
-      input: {
-        index: resolve(__dirname, 'index.html'),
-        notFound: resolve(__dirname, '404.html'),
-      },
       output: {
         manualChunks(id) {
           if (id.includes('noscript.css')) {
             return 'noscript'
           }
+          return null
         },
       },
     },
   },
-  plugins: [noscriptStylePlugin()],
 })
