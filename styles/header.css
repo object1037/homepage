@@ -1,43 +1,40 @@
 header {
+  --duration-load: 1000ms;
+  --duration-hover: 300ms;
   position: fixed;
   pointer-events: none;
   inset: 0 var(--pad-x);
   height: 100svh;
-  transition-duration: 1000ms;
-  transition-timing-function: var(--easing);
-  transition-property: background-color;
+  transition: background-color var(--duration-load) var(--easing);
   background-color: var(--bg);
 
-  svg,
+  .icon,
   h1 {
+    pointer-events: auto;
     position: absolute;
-    transition-duration: inherit;
     transition-timing-function: inherit;
   }
 
-  svg {
+  .icon {
+    border: none;
+    border-radius: 50%;
     width: var(--icon-size);
     height: auto;
-    transition-property: top, left, width, height;
 
+    transition-property: color, background-color, top, left, width, height;
+    transition-duration:
+      var(--duration-hover), var(--duration-hover), var(--duration-load),
+      var(--duration-load), var(--duration-load), var(--duration-load);
     top: calc(50% - var(--icon-size) / 2);
     left: calc(50% - var(--icon-size) / 2);
   }
 
   h1 {
-    pointer-events: auto;
     transition-property: top, right, translate;
-
+    transition-duration: inherit;
     top: calc(50% + 3.75rem);
     right: 50%;
     translate: 50%;
-  }
-
-  #hair {
-    transition-duration: inherit;
-    transition-timing-function: inherit;
-    transition-property: fill;
-    fill: var(--hair, transparent);
   }
 }
 
@@ -51,7 +48,7 @@ header.end {
     transparent 12rem
   );
 
-  svg {
+  .icon {
     top: var(--pad-x);
     left: 0;
   }
@@ -60,5 +57,19 @@ header.end {
     top: calc(var(--pad-x) + var(--icon-size) / 2);
     right: 0;
     translate: 0 -50%;
+  }
+}
+
+#hair {
+  fill-opacity: var(--hair-opacity);
+  transition: fill-opacity var(--duration-hover) var(--easing);
+}
+
+.icon:hover {
+  color: var(--neutral-900);
+  background-color: #fff5f6;
+
+  #hair {
+    fill-opacity: 1;
   }
 }

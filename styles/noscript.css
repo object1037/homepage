@@ -8,7 +8,7 @@ header {
     transparent 12rem
   );
 
-  svg {
+  .icon {
     top: var(--pad-x);
     left: 0;
   }

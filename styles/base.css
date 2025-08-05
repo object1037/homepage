@@ -5,8 +5,8 @@
   --icon-size: 8.75rem;
 
   --neutral-50: oklch(0.985 0 0);
-  /* --neutral-100: oklch(0.97 0 0);
-  --neutral-200: oklch(0.922 0 0); */
+  /* --neutral-100: oklch(0.97 0 0); */
+  --neutral-200: oklch(0.922 0 0);
   --neutral-300: oklch(0.87 0 0);
   /* --neutral-400: oklch(0.708 0 0); */
   --neutral-500: oklch(0.556 0 0);
@@ -20,6 +20,7 @@
   --sub-bg: var(--neutral-300);
   --sub-fg: var(--neutral-500);
   --fg: var(--neutral-900);
+  --hair-opacity: 0;
 
   @media (prefers-color-scheme: dark) {
     --bg: var(--neutral-900);
