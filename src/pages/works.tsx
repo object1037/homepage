@@ -38,7 +38,8 @@ export default function Works() {
         入江 英嗣, 坂井 修一.
         "近距離無線通信を用いた形状自在キーボードシステム",
         第32回インタラクティブシステムとソフトウェアに関するワークショップ (WISS
-        2024), Dec 2024. (∫MAD賞)
+        2024), Dec 2024.{' '}
+        <a href="https://www.wiss.org/WISS2024/award.html">&lt;∫MAD賞&gt;</a>
       </>,
     ],
   ]
