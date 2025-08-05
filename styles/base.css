@@ -83,12 +83,6 @@ a {
   transition: border-color 150ms var(--easing);
 
   &:hover {
-    border-bottom-color: var(--fg);
+    border-bottom-color: currentColor;
   }
-}
-
-small {
-  color: var(--sub-fg);
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
