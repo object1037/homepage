@@ -1,7 +1,7 @@
 header {
   position: fixed;
   pointer-events: none;
-  inset: 0;
+  inset: 0 var(--pad-x);
   height: 100svh;
   transition-duration: 1000ms;
   transition-timing-function: var(--easing);
@@ -53,12 +53,12 @@ header.end {
 
   svg {
     top: var(--pad-x);
-    left: var(--pad-x);
+    left: 0;
   }
 
   h1 {
     top: calc(var(--pad-x) + var(--icon-size) / 2);
-    right: var(--pad-x);
+    right: 0;
     translate: 0 -50%;
   }
 }
