@@ -18,7 +18,7 @@ export default function Works() {
         <span className="underline">Koki Yamagami</span>, Masato Goto, Junichiro
         Kadomoto, and Hidetsugu Irie. "MorphKeys: A Reconfigurable Keyboard
         System Using Switched NFC Tags." In The 38th Annual ACM Symposium on
-        User Interface Software and Technology (UIST ’25), September 2025.
+        User Interface Software and Technology (UIST ’25), Sep 2025.
       </>,
       '10.1145/3746059.3747706',
     ],
@@ -28,9 +28,18 @@ export default function Works() {
         Kadomoto, and Hidetsugu Irie. "Demonstration of MorphKeys: A
         Reconfigurable Keyboard System Using Switched NFC Tags." In The 38th
         Annual ACM Symposium on User Interface Software and Technology (UIST
-        Adjunct ’25), September 2025.
+        Adjunct ’25), Sep 2025.
       </>,
       '10.1145/3746058.3758992',
+    ],
+    [
+      <>
+        <span className="underline">山上 航輝</span>, 後藤 将人, 門本 淳一郎,
+        入江 英嗣, 坂井 修一.
+        "近距離無線通信を用いた形状自在キーボードシステム",
+        第32回インタラクティブシステムとソフトウェアに関するワークショップ (WISS
+        2024), Dec 2024. (∫MAD賞)
+      </>,
     ],
   ]
   const cardLinks: Links = [['GitHub', 'https://github.com/object1037/Card']]
@@ -73,8 +82,8 @@ export default function Works() {
           links={L4Links}
         >
           <p>
-            A 50% wireless split keyboard with an ortholinear layout. Power can
-            be supplied via a LiPo battery or a pair of CR2032 coin batteries.
+            A 50% wireless split keyboard with an ortholinear layout, with
+            support for both a LiPo battery and a pair of CR2032 coin batteries.
           </p>
         </Work>
       </main>
