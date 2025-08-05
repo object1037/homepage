@@ -1,5 +1,11 @@
+import type { MetaData } from '../../lib/types'
 import Footer from '../components/footer'
 import Header from '../components/header'
+
+export const metaData: MetaData = {
+  title: 'object1037.dev',
+  description: "object1037's homepage",
+}
 
 export default function Index() {
   return (

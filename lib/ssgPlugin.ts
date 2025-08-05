@@ -9,6 +9,20 @@ import {
   type ViteDevServer,
 } from 'vite'
 import type { Render } from './entry-server'
+import type { MetaData } from './types'
+
+const renderTemplate = (
+  template: string,
+  appHtml: string,
+  meta: MetaData & { fileName: string },
+) => {
+  const fullUrl = `https://object1037.dev${meta.fileName === '/index.tsx' ? '' : meta.fileName.replace(/\.tsx$/, '')}`
+  return template
+    .replace('<!--outlet-->', appHtml)
+    .replaceAll('META_TITLE', meta.title)
+    .replaceAll('META_DESCRIPTION', meta.description)
+    .replaceAll('META_URL', fullUrl)
+}
 
 export const ssgPlugin: () => Plugin = () => {
   const indexPath = resolve(__dirname, '../index.html')
@@ -55,8 +69,11 @@ export const ssgPlugin: () => Plugin = () => {
           const bundleForFile = bundle[htmlFileName]
           console.log(`Pre-rendering: ${htmlFileName}`)
 
-          const { appHtml } = await render(`/${fileName}`)
-          const html = template.replace(`<!--outlet-->`, appHtml)
+          const { appHtml, meta } = await render(`/${fileName}`)
+          const html = renderTemplate(template, appHtml, {
+            ...meta,
+            fileName: `/${fileName}`,
+          })
 
           if (bundleForFile && bundleForFile.type === 'asset') {
             bundleForFile.source = html
@@ -97,8 +114,11 @@ export const ssgPlugin: () => Plugin = () => {
             const { render } = (await serverEnv.runner.import(entryPath)) as {
               render: Render
             }
-            const { appHtml, status } = await render(fileName)
-            const html = transformed.replace('<!--outlet-->', appHtml)
+            const { appHtml, meta, status } = await render(fileName)
+            const html = renderTemplate(transformed, appHtml, {
+              ...meta,
+              fileName,
+            })
 
             res.statusCode = status
             res.setHeader('Content-Type', 'text/html')
