@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process'
 
 const getGitCommitInfo = () => {
-  const stdout = execSync('git show -s --format="%h@%ci" main')
+  const stdout = execSync('git show -s --format="%h@%ci" HEAD')
   const [hash, date] = stdout.toString().trim().split('@')
   return { hash, date }
 }
