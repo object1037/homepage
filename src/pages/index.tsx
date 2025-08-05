@@ -10,7 +10,7 @@ export const metaData: MetaData = {
 export default function Index() {
   return (
     <>
-      <Header />
+      <Header heading="object1037" />
       <main>
         <section>
           <h2>About</h2>

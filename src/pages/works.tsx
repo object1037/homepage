@@ -50,7 +50,7 @@ export default function Works() {
 
   return (
     <>
-      <Header />
+      <Header heading="Works" />
       <main>
         <Work
           title="MorphKeys"
