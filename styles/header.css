@@ -1,3 +1,5 @@
+@import "mixins.css";
+
 header {
   --duration-load: 1000ms;
   --duration-hover: 300ms;
@@ -36,28 +38,14 @@ header {
     right: 50%;
     translate: 50%;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    @apply header_end;
+  }
 }
 
 header.end {
-  --icon-size: 6rem;
-  background-color: transparent;
-  background-image: linear-gradient(
-    to bottom,
-    var(--bg),
-    var(--bg) 6rem,
-    transparent 12rem
-  );
-
-  .icon {
-    top: var(--pad-x);
-    left: 0;
-  }
-
-  h1 {
-    top: calc(var(--pad-x) + var(--icon-size) / 2);
-    right: 0;
-    translate: 0 -50%;
-  }
+  @apply header_end;
 }
 
 #hair {
