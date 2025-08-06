@@ -30,8 +30,6 @@ const setRandomPosition = (
 
   el.style.top = `${top}px`
   el.style.left = `${left}px`
-  el.style.transitionDelay = '0s'
-  el.style.pointerEvents = 'auto'
 }
 
 export const randomPosition = (
@@ -40,6 +38,12 @@ export const randomPosition = (
   obstacle: HTMLElement | null,
 ) => {
   if (!el || !container || !obstacle) return
+
+  el.style.transitionDelay = '0s'
+  el.style.pointerEvents = 'auto'
+  el.style.width = 'auto'
+  el.style.maxWidth = '25%'
+  el.style.maxHeight = '25%'
 
   let timeoutID: NodeJS.Timeout
 
