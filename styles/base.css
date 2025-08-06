@@ -2,6 +2,7 @@
   --easing: cubic-bezier(0.4, 0, 0.2, 1);
 
   --pad-x: 2rem;
+  --max-w: 48rem;
   --icon-size: 8.75rem;
 
   --neutral-50: oklch(0.985 0 0);
@@ -20,6 +21,7 @@
   --sub-bg: var(--neutral-300);
   --sub-fg: var(--neutral-500);
   --fg: var(--neutral-900);
+  --hair-opacity: 0;
 
   @media (prefers-color-scheme: dark) {
     --bg: var(--neutral-900);
@@ -37,7 +39,7 @@ body {
 }
 
 body > * {
-  max-width: 48rem;
+  max-width: var(--max-w);
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,13 +54,14 @@ main {
   }
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
 h2 {
   font-size: 2.25rem;
-  font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }

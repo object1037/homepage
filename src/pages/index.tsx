@@ -1,10 +1,16 @@
+import type { MetaData } from '../../lib/types'
 import Footer from '../components/footer'
 import Header from '../components/header'
+
+export const metaData: MetaData = {
+  title: 'object1037.dev',
+  description: "object1037's homepage",
+}
 
 export default function Index() {
   return (
     <>
-      <Header />
+      <Header heading="object1037" />
       <main>
         <section>
           <h2>About</h2>
@@ -20,17 +26,19 @@ export default function Index() {
         <section>
           <h2>Interests</h2>
           <ul>
+            <li>Human-Computer Interaction</li>
             <li>Web</li>
-            <li>Design</li>
             <li>
               <a href="https://www.youtube.com/@pokopea">Pokopea</a>
             </li>
-            <li>Keyboard</li>
           </ul>
         </section>
         <section>
           <h2>Links</h2>
           <ul>
+            <li>
+              <a href="/works">Works</a>
+            </li>
             <li>
               <a href="https://blog.object1037.dev">Blog</a>
             </li>

@@ -1,64 +1,94 @@
+@import "mixins.css";
+
 header {
-  position: fixed;
-  pointer-events: none;
-  inset: 0 var(--pad-x);
+  --duration-load: 1000ms;
+  --duration-hover: 300ms;
+  inset: 0;
+  max-width: none;
   height: 100svh;
-  transition-duration: 1000ms;
-  transition-timing-function: var(--easing);
-  transition-property: background-color;
+  transition: background-color var(--duration-load) var(--easing);
   background-color: var(--bg);
 
-  svg,
-  h1 {
-    position: absolute;
-    transition-duration: inherit;
-    transition-timing-function: inherit;
+  &,
+  .container {
+    position: fixed;
+    pointer-events: none;
   }
 
-  svg {
+  .container {
+    inset: 0 var(--pad-x);
+    max-width: var(--max-w);
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+
+  .icon,
+  h1 {
+    pointer-events: auto;
+    position: absolute;
+    transition-timing-function: var(--easing);
+  }
+
+  .icon {
+    border: none;
+    border-radius: 50%;
     width: var(--icon-size);
     height: auto;
-    transition-property: top, left, width, height;
 
+    transition-property: color, background-color, top, left, width, height;
+    transition-duration:
+      var(--duration-hover), var(--duration-hover), var(--duration-load),
+      var(--duration-load), var(--duration-load), var(--duration-load);
     top: calc(50% - var(--icon-size) / 2);
     left: calc(50% - var(--icon-size) / 2);
   }
 
   h1 {
-    pointer-events: auto;
     transition-property: top, right, translate;
-
+    transition-duration: var(--duration-load);
     top: calc(50% + 3.75rem);
     right: 50%;
     translate: 50%;
   }
 
-  #hair {
-    transition-duration: inherit;
-    transition-timing-function: inherit;
-    transition-property: fill;
-    fill: var(--hair, transparent);
+  @media (prefers-reduced-motion: reduce) {
+    @apply header_end;
   }
 }
 
 header.end {
-  --icon-size: 6rem;
-  background-color: transparent;
-  background-image: linear-gradient(
-    to bottom,
-    var(--bg),
-    var(--bg) 6rem,
-    transparent 12rem
-  );
+  @apply header_end;
+}
 
-  svg {
-    top: var(--pad-x);
-    left: 0;
+@media print {
+  header.end {
+    height: auto;
+    background-image: none;
+
+    &,
+    * {
+      position: static;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -6rem;
+    }
   }
+}
 
-  h1 {
-    top: calc(var(--pad-x) + var(--icon-size) / 2);
-    right: 0;
-    translate: 0 -50%;
+#hair {
+  fill-opacity: var(--hair-opacity);
+  transition: fill-opacity var(--duration-hover) var(--easing);
+}
+
+.icon:hover {
+  color: var(--neutral-900);
+  background-color: #fff5f6;
+
+  #hair {
+    fill-opacity: 1;
   }
 }
