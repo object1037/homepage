@@ -1,3 +1,6 @@
+// const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+// await sleep(1000)
+
 const colorScheme = window.matchMedia('(prefers-color-scheme: light)')
 const setColors = () => {
   document.documentElement.style.setProperty('--bg', '#fff5f6')

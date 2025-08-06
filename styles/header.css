@@ -3,18 +3,31 @@
 header {
   --duration-load: 1000ms;
   --duration-hover: 300ms;
-  position: fixed;
-  pointer-events: none;
-  inset: 0 var(--pad-x);
+  inset: 0;
+  max-width: none;
   height: 100svh;
   transition: background-color var(--duration-load) var(--easing);
   background-color: var(--bg);
+
+  &,
+  .container {
+    position: fixed;
+    pointer-events: none;
+  }
+
+  .container {
+    inset: 0 var(--pad-x);
+    max-width: var(--max-w);
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
 
   .icon,
   h1 {
     pointer-events: auto;
     position: absolute;
-    transition-timing-function: inherit;
+    transition-timing-function: var(--easing);
   }
 
   .icon {
@@ -33,7 +46,7 @@ header {
 
   h1 {
     transition-property: top, right, translate;
-    transition-duration: inherit;
+    transition-duration: var(--duration-load);
     top: calc(50% + 3.75rem);
     right: 50%;
     translate: 50%;
