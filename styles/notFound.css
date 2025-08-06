@@ -15,7 +15,8 @@ main {
   width: 100%;
   flex-grow: 1;
   margin-top: 0;
-  outline: 1px solid red;
+  border-radius: 0.5rem;
+  outline: 1px solid var(--sub-bg);
 }
 
 svg {
@@ -27,9 +28,7 @@ svg {
   height: auto;
   top: calc(50% - var(--icon-size) / 2);
   left: calc(50% - var(--icon-size) / 2);
-  pointer-events: auto;
-
-  outline: 1px solid blue;
+  pointer-events: none;
 
   :where(:not(#eyes)) {
     stroke-dasharray: 30 0;
@@ -37,7 +36,6 @@ svg {
 }
 
 h1 {
-  pointer-events: auto;
   position: absolute;
   transition-timing-function: var(--easing);
   top: calc(50% + 3.75rem);

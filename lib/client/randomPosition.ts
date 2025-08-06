@@ -31,6 +31,7 @@ const setRandomPosition = (
   el.style.top = `${top}px`
   el.style.left = `${left}px`
   el.style.transitionDelay = '0s'
+  el.style.pointerEvents = 'auto'
 }
 
 export const randomPosition = (
