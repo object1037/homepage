@@ -3,8 +3,6 @@ const setRandomPosition = (
   el: SVGSVGElement,
   obstacle: HTMLElement,
 ) => {
-  const bodyPad = 32
-
   const containerRect = container.getBoundingClientRect()
   const elRect = el.getBoundingClientRect()
   const obstacleRect = obstacle.getBoundingClientRect()
@@ -14,13 +12,15 @@ const setRandomPosition = (
 
   let top = Math.random() * topRange
   let left = Math.random() * leftRange
+  const topOffset = containerRect.top
+  const leftOffset = containerRect.left
   let i = 0
 
   while (
-    top + bodyPad < obstacleRect.bottom &&
-    top + elRect.height + bodyPad > obstacleRect.top &&
-    left + bodyPad < obstacleRect.right &&
-    left + elRect.width + bodyPad > obstacleRect.left &&
+    top + topOffset < obstacleRect.bottom &&
+    top + elRect.height + topOffset > obstacleRect.top &&
+    left + leftOffset < obstacleRect.right &&
+    left + elRect.width + leftOffset > obstacleRect.left &&
     i++ < 5
   ) {
     top = Math.random() * topRange

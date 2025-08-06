@@ -30,6 +30,8 @@ svg {
   left: calc(50% - var(--icon-size) / 2);
   pointer-events: none;
 
+  outline: 1px solid red;
+
   :where(:not(#eyes)) {
     stroke-dasharray: 30 0;
   }
