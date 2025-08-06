@@ -40,11 +40,16 @@ export const randomPosition = (
 ) => {
   if (!el || !container || !obstacle) return
 
+  let timeoutID: NodeJS.Timeout
+
   window.addEventListener('resize', () => {
     setRandomPosition(container, el, obstacle)
   })
+  el.addEventListener('mouseenter', () => {
+    clearTimeout(timeoutID)
+  })
   el.addEventListener('mouseleave', () => {
-    setTimeout(() => {
+    timeoutID = setTimeout(() => {
       setRandomPosition(container, el, obstacle)
     }, 2000)
   })
