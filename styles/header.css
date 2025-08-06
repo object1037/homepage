@@ -61,6 +61,25 @@ header.end {
   @apply header_end;
 }
 
+@media print {
+  header.end {
+    height: auto;
+    background-image: none;
+
+    &,
+    * {
+      position: static;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -6rem;
+    }
+  }
+}
+
+
 #hair {
   fill-opacity: var(--hair-opacity);
   transition: fill-opacity var(--duration-hover) var(--easing);
