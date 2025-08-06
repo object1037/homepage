@@ -26,6 +26,7 @@ const renderTemplate = (
 
 export const ssgPlugin: () => Plugin = () => {
   const indexPath = resolve(__dirname, '../index.html')
+  const notFoundPath = resolve(__dirname, '../404.html')
   const entryPath = resolve(__dirname, './entry-server.ts')
 
   return {
@@ -50,12 +51,22 @@ export const ssgPlugin: () => Plugin = () => {
       async handler(_options, bundle) {
         const filesToPrerender = await readdir('./src/pages')
         const templateBundle = bundle['index.html']
+        const notFoundBundle = bundle['404.html']
+
         if (!templateBundle || templateBundle.type !== 'asset') {
           throw new Error('index.html asset not found in bundle')
         }
-        const template = templateBundle.source
-        if (typeof template !== 'string') {
+        if (!notFoundBundle || notFoundBundle.type !== 'asset') {
+          throw new Error('404.html asset not found in bundle')
+        }
+
+        const indexTemplate = templateBundle.source
+        const notFoundTemplate = notFoundBundle.source
+        if (typeof indexTemplate !== 'string') {
           throw new Error('index.html source is not a string')
+        }
+        if (typeof notFoundTemplate !== 'string') {
+          throw new Error('404.html source is not a string')
         }
 
         const {
@@ -69,11 +80,15 @@ export const ssgPlugin: () => Plugin = () => {
           const bundleForFile = bundle[htmlFileName]
           console.log(`Pre-rendering: ${htmlFileName}`)
 
-          const { appHtml, meta } = await render(`/${fileName}`)
-          const html = renderTemplate(template, appHtml, {
-            ...meta,
-            fileName: `/${fileName}`,
-          })
+          const { appHtml, meta, status } = await render(`/${fileName}`)
+          const html = renderTemplate(
+            status === 404 ? notFoundTemplate : indexTemplate,
+            appHtml,
+            {
+              ...meta,
+              fileName: `/${fileName}`,
+            },
+          )
 
           if (bundleForFile && bundleForFile.type === 'asset') {
             bundleForFile.source = html
@@ -109,12 +124,16 @@ export const ssgPlugin: () => Plugin = () => {
 
             const url = req.originalUrl ?? ''
             const fileName = url === '/' ? '/index.tsx' : `${url}.tsx`
-            const template = await readFile(indexPath, 'utf-8')
-            const transformed = await server.transformIndexHtml(url, template)
             const { render } = (await serverEnv.runner.import(entryPath)) as {
               render: Render
             }
             const { appHtml, meta, status } = await render(fileName)
+
+            const template = await readFile(
+              status === 404 ? notFoundPath : indexPath,
+              'utf-8',
+            )
+            const transformed = await server.transformIndexHtml(url, template)
             const html = renderTemplate(transformed, appHtml, {
               ...meta,
               fileName,

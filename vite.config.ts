@@ -1,7 +1,11 @@
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import { noscriptPlugin } from './lib/noscriptPlugin.ts'
 import { ssgPlugin } from './lib/ssgPlugin.ts'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig(() => {
   const mixins = new Map()
@@ -44,6 +48,10 @@ export default defineConfig(() => {
         polyfill: false,
       },
       rollupOptions: {
+        input: {
+          index: resolve(__dirname, 'index.html'),
+          notFound: resolve(__dirname, '404.html'),
+        },
         output: {
           manualChunks(id) {
             if (id.includes('noscript.css')) {
