@@ -2,7 +2,7 @@ import Icon from './icon'
 
 export default function Header({ heading }: { heading: string }) {
   return (
-    <header>
+    <header id="transition">
       <div className="container">
         <a className="icon" href="/">
           <Icon />

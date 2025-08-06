@@ -17,7 +17,7 @@ export const render = async (fileName: string) => {
       ? await import('../src/pages/404.tsx').then((mod) => {
           return [mod.default(), mod.metaData, 404] as const
         })
-      : [match.default(), match.metaData, 200]
+      : [match.default(), match.metaData, fileName === '/404.tsx' ? 404 : 200]
 
   const appHtml = renderToStaticMarkup(page)
 

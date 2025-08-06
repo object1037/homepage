@@ -1,4 +1,4 @@
-export default function Icon() {
+export default function Icon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,6 +12,7 @@ export default function Icon() {
       strokeLinejoin="round"
       role="img"
       aria-label="object1037's icon"
+      {...props}
     >
       <path d="M167.643 185.426c-31.812 3.791-63.623 3.821-95.435 0" />
       <path

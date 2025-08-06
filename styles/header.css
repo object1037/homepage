@@ -16,7 +16,7 @@ header {
   }
 
   .container {
-    inset: 0 var(--pad-x);
+    inset: 0 var(--pad);
     max-width: var(--max-w);
     margin-left: auto;
     margin-right: auto;
@@ -53,16 +53,16 @@ header {
   }
 
   @media (prefers-reduced-motion: reduce) {
-    @apply header_end;
+    @apply transition_end;
   }
 }
 
-header.end {
-  @apply header_end;
+#transition.end {
+  @apply transition_end;
 }
 
 @media print {
-  header.end {
+  #transition.end {
     height: auto;
     background-image: none;
 
@@ -80,7 +80,6 @@ header.end {
 }
 
 #hair {
-  fill-opacity: var(--hair-opacity);
   transition: fill-opacity var(--duration-hover) var(--easing);
 }
 
@@ -89,6 +88,6 @@ header.end {
   background-color: #fff5f6;
 
   #hair {
-    fill-opacity: 1;
+    --hair-opacity: 1;
   }
 }
