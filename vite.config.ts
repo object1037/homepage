@@ -2,8 +2,8 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-import { noscriptPlugin } from './lib/noscriptPlugin.ts'
-import { ssgPlugin } from './lib/ssgPlugin.ts'
+import { noscriptPlugin } from './lib/plugins/noscriptPlugin.ts'
+import { ssgPlugin } from './lib/plugins/ssgPlugin.ts'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 

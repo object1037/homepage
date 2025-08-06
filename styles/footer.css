@@ -6,6 +6,7 @@ footer {
   gap: 1rem;
   color: var(--sub-fg);
   font-size: 0.75rem;
+  width: 100%;
 
   @media screen and (min-width: 40rem) {
     flex-direction: row;

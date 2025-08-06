@@ -25,6 +25,6 @@
     "noImplicitOverride": true,
     "useUnknownInCatchVariables": true
   },
-  "include": ["src/**/*", "lib", "*.ts"],
+  "include": ["src/**/*", "lib/**/*", "*.ts"],
   "exclude": ["dist", "node_modules"]
 }

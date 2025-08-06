@@ -1,7 +1,7 @@
 :root {
   --easing: cubic-bezier(0.4, 0, 0.2, 1);
 
-  --pad-x: 2rem;
+  --pad: 2rem;
   --max-w: 48rem;
   --icon-size: 8.75rem;
 
@@ -34,7 +34,7 @@
 body {
   background-color: var(--bg);
   color: var(--fg);
-  padding: var(--pad-x);
+  padding: var(--pad);
   padding-bottom: 3rem;
 }
 
@@ -85,4 +85,8 @@ a {
   &:hover {
     border-bottom-color: currentColor;
   }
+}
+
+#hair {
+  fill-opacity: var(--hair-opacity);
 }

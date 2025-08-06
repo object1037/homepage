@@ -8,8 +8,8 @@ import {
   runnerImport,
   type ViteDevServer,
 } from 'vite'
-import type { Render } from './entry-server'
-import type { MetaData } from './types'
+import type { Render } from '../entry-server'
+import type { MetaData } from '../types'
 
 const renderTemplate = (
   template: string,
@@ -25,9 +25,9 @@ const renderTemplate = (
 }
 
 export const ssgPlugin: () => Plugin = () => {
-  const indexPath = resolve(__dirname, '../index.html')
-  const notFoundPath = resolve(__dirname, '../404.html')
-  const entryPath = resolve(__dirname, './entry-server.ts')
+  const indexPath = resolve(__dirname, '../../index.html')
+  const notFoundPath = resolve(__dirname, '../../404.html')
+  const entryPath = resolve(__dirname, '../entry-server.ts')
 
   return {
     name: 'ssg-plugin',
