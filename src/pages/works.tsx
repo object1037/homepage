@@ -74,7 +74,15 @@ export default function Works() {
           alt="Picture of Card, showing its card-like design"
           links={cardLinks}
         >
-          <p>A PCB business card that functions as a Bluetooth trackpad.</p>
+          <p>
+            A PCB business card functioning as a Bluetooth trackpad, powered by
+            an{' '}
+            <a href="https://www.insightsip.com/products/bluetooth-le-modules/isp1907">
+              ISP1907-LL
+            </a>{' '}
+            BLE module and running the{' '}
+            <a href="https://www.zephyrproject.org/">Zephyr RTOS</a>.
+          </p>
         </Work>
         <Work
           title="L4"
@@ -83,8 +91,14 @@ export default function Works() {
           links={L4Links}
         >
           <p>
-            A 50% wireless split keyboard with an ortholinear layout, with
-            support for both a LiPo battery and a pair of CR2032 coin batteries.
+            A 50% wireless split keyboard with an ortholinear layout, powered by
+            a{' '}
+            <a href="https://www.seeedstudio.com/XIAO-nRF52840.html">
+              XIAO nRF52840
+            </a>{' '}
+            and running the <a href="https://zmk.dev/">ZMK firmware</a>,
+            supporting both a LiPo battery and a pair of CR2032 coin cell
+            batteries.
           </p>
         </Work>
       </main>
