@@ -10,6 +10,7 @@ export const metaData: MetaData = {
 export default function Index() {
   return (
     <>
+      {/** biome-ignore lint/correctness/useUniqueElementIds: page will be rendered one time */}
       <main id="transition">
         <Icon />
         <h1>404 NOT FOUND</h1>

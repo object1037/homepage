@@ -1,3 +1,4 @@
+/* biome-ignore lint/suspicious/noUnknownAtRules: using custom mixin rule */
 @mixin transition_end {
   --icon-size: 6rem;
   background-color: transparent;

@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/useUniqueElementIds: component will be rendered one time */
 export default function Icon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

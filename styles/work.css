@@ -18,8 +18,8 @@ span.underline {
 
 .refNode {
   font-family:
-    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Hiragino Kaku Gothic Pro", "Noto Sans JP", sans-serif;
 }
 
 .doi {
