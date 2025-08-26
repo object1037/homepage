@@ -43,7 +43,10 @@ export default function Works() {
       </>,
     ],
   ]
-  const cardLinks: Links = [['GitHub', 'https://github.com/object1037/Card']]
+  const cardLinks: Links = [
+    ['GitHub', 'https://github.com/object1037/Card'],
+    ['Blog Post', 'https://blog.object1037.dev/posts/20250825'],
+  ]
   const L4Links: Links = [
     ['GitHub', 'https://github.com/object1037/L4'],
     ['Blog Post', 'https://blog.object1037.dev/posts/20240614'],
