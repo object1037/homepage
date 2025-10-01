@@ -14,7 +14,7 @@ export default function Work({
   title: string
   src: string
   alt: string
-  publications?: [refNode: React.ReactNode, doi?: string][]
+  publications?: [refNode: React.ReactNode, doi?: string, video?: string][]
   links?: [label: string, href: string][]
   children?: React.ReactNode
 }) {
@@ -56,12 +56,17 @@ export default function Work({
         <section>
           <h3>Publications</h3>
           <ul>
-            {publications.map(([refNode, doi]) => (
+            {publications.map(([refNode, doi, video]) => (
               <li key={refNode?.toString()}>
                 <span className="refNode">{refNode}</span>
                 {doi && (
                   <span className="doi">
-                    DOI: <a href={`https://doi.org/${doi}`}>{doi}</a>
+                    <a href={`https://doi.org/${doi}`}>[DOI: {doi}]</a>
+                  </span>
+                )}
+                {video && (
+                  <span className="video">
+                    <a href={video}>[Video]</a>
                   </span>
                 )}
               </li>

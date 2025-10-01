@@ -21,6 +21,7 @@ export default function Works() {
         User Interface Software and Technology (UIST ’25), Sep 2025.
       </>,
       '10.1145/3746059.3747706',
+      'https://www.youtube.com/watch?v=CawOTSMQeZA',
     ],
     [
       <>
