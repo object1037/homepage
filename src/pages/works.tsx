@@ -44,6 +44,12 @@ export default function Works() {
       </>,
     ],
   ]
+  const morphKeysLinks: Links = [
+    [
+      'ITmedia NEWS',
+      'https://www.itmedia.co.jp/news/articles/2510/16/news023.html',
+    ],
+  ]
   const cardLinks: Links = [
     ['GitHub', 'https://github.com/object1037/Card'],
     ['Blog Post', 'https://blog.object1037.dev/posts/20250825'],
@@ -62,6 +68,7 @@ export default function Works() {
           src="morphkeys.png"
           alt="Picture of MorphKeys, demnonstrating its reconfigurability"
           publications={morphKeysPubs}
+          links={morphKeysLinks}
         >
           <p>
             A reconfigurable keyboard system that lets users freely arrange
