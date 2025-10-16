@@ -3,6 +3,11 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { imageSize } from 'image-size'
 
+export type WorkData = Pick<
+  Parameters<typeof Work>[0],
+  'links' | 'publications'
+>
+
 export default function Work({
   title,
   src,
