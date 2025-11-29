@@ -53,13 +53,11 @@ header {
   }
 
   @media (prefers-reduced-motion: reduce) {
-    /* biome-ignore lint/suspicious/noUnknownAtRules: using custom mixin rule */
     @apply transition_end;
   }
 }
 
 #transition.end {
-  /* biome-ignore lint/suspicious/noUnknownAtRules: using custom mixin rule */
   @apply transition_end;
 }
 

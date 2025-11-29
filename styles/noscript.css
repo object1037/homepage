@@ -1,6 +1,5 @@
 @import "mixins.css";
 
 header {
-  /* biome-ignore lint/suspicious/noUnknownAtRules: using custom mixin rule */
   @apply header_end;
 }
