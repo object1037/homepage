@@ -5,6 +5,7 @@ import Work from '../components/work'
 import { cardData } from '../data/card'
 import { dashData } from '../data/dash'
 import { L4Data } from '../data/l4'
+import { mizetData } from '../data/mizet'
 import { morphKeysData } from '../data/morphKeys'
 import { vespaData } from '../data/vespa'
 
@@ -95,6 +96,19 @@ export default function Works() {
             sensor and a{' '}
             <a href="https://docs.m5stack.com/en/core/stamp_c3u">M5Stamp C3U</a>
             .
+          </p>
+        </Work>
+        <Work
+          title="mizet"
+          src="mizet.jpeg"
+          alt="Picture of a mizet"
+          links={mizetData.links}
+        >
+          <p>
+            A small input device featuring an OLED display, a rotary encoder,
+            and buttons, capable of keyboard and mouse operations. Powered by an{' '}
+            <a href="https://www.raspberrypi.com/products/rp2040/">RP2040</a>,
+            developed with <a href="https://embassy.dev/">Embassy</a>.
           </p>
         </Work>
       </main>
