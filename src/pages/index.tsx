@@ -16,7 +16,7 @@ export default function Index() {
           <h2>About</h2>
           <p>
             I'm object1037, a master's student at the University of Tokyo's
-            Graduate School of Information Science and Technology(M1,{' '}
+            Graduate School of Information Science and Technology(M2,{' '}
             <a href="https://www.i.u-tokyo.ac.jp/edu/course/ice/index_e.shtml">
               ICE
             </a>
