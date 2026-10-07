@@ -1,5 +1,5 @@
 @import "mixins.css";
 
-header {
-  @apply header_end;
+#transition {
+  @apply transition_end;
 }
