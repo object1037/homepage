@@ -54,10 +54,10 @@ export const ssgPlugin: () => Plugin = () => {
         const templateBundle = bundle['index.html']
         const notFoundBundle = bundle['404.html']
 
-        if (!templateBundle || templateBundle.type !== 'asset') {
+        if (templateBundle?.type !== 'asset') {
           throw new Error('index.html asset not found in bundle')
         }
-        if (!notFoundBundle || notFoundBundle.type !== 'asset') {
+        if (notFoundBundle?.type !== 'asset') {
           throw new Error('404.html asset not found in bundle')
         }
 

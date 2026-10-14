@@ -7,6 +7,7 @@ import { dashData } from '../data/dash'
 import { L4Data } from '../data/l4'
 import { mizetData } from '../data/mizet'
 import { morphKeysData } from '../data/morphKeys'
+import { pacerData } from '../data/pacer'
 import { vespaData } from '../data/vespa'
 
 export const metaData: MetaData = {
@@ -19,6 +20,61 @@ export default function Works() {
     <>
       <Header heading="Works" />
       <main>
+        <Work
+          title="Pacer"
+          src="pacer.jpeg"
+          alt="Picture of a Pacer"
+          links={pacerData.links}
+        >
+          <p>
+            A pomodoro timer designed for focus. Powered by a{' '}
+            <a href="https://www.wch-ic.com/products/CH32V003.html">CH32V003</a>
+            .
+          </p>
+        </Work>
+        <Work
+          title="mizet"
+          src="mizet.jpeg"
+          alt="Picture of a mizet"
+          links={mizetData.links}
+        >
+          <p>
+            A small input device featuring an OLED display, a rotary encoder,
+            and buttons, capable of keyboard and mouse operations. Powered by an{' '}
+            <a href="https://www.raspberrypi.com/products/rp2040/">RP2040</a>,
+            developed with <a href="https://embassy.dev/">Embassy</a>.
+          </p>
+        </Work>
+        <Work
+          title="Dash"
+          src="dash.jpeg"
+          alt="Picture of a Dash, showing temperature, humidity, and CO2 ppm data on its e-paper display"
+          links={dashData.links}
+        >
+          <p>
+            An air quality monitor with an e-paper display, measuring
+            temperature, humidity, and CO2 ppm. Uses a{' '}
+            <a href="https://sensirion.com/products/catalog/SCD40">SCD40</a> CO2
+            sensor and a{' '}
+            <a href="https://docs.m5stack.com/en/core/stamp_c3u">M5Stamp C3U</a>
+            .
+          </p>
+        </Work>
+        <Work
+          title="Vespa"
+          src="vespa.jpeg"
+          alt="Picture of a Vespa, showing its ortholinear layout and unibody design"
+          links={vespaData.links}
+        >
+          <p>
+            A 50% wireless unibody keyboard with an ortholinear layout. Powered
+            by an AA battery and a{' '}
+            <a href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Plus-p-6359.html">
+              XIAO nRF52840 Plus
+            </a>
+            , running the <a href="https://zmk.dev/">ZMK firmware</a>.
+          </p>
+        </Work>
         <Work
           title="MorphKeys"
           src="morphkeys.png"
@@ -52,21 +108,6 @@ export default function Works() {
           </p>
         </Work>
         <Work
-          title="Vespa"
-          src="vespa.jpeg"
-          alt="Picture of a Vespa, showing its ortholinear layout and unibody design"
-          links={vespaData.links}
-        >
-          <p>
-            A 50% wireless unibody keyboard with an ortholinear layout. Powered
-            by an AA battery and a{' '}
-            <a href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Plus-p-6359.html">
-              XIAO nRF52840 Plus
-            </a>
-            , running the <a href="https://zmk.dev/">ZMK firmware</a>.
-          </p>
-        </Work>
-        <Work
           title="L4"
           src="L4.jpeg"
           alt="Picture of an L4, showing its ortholinear layout and split design"
@@ -81,34 +122,6 @@ export default function Works() {
             and running the <a href="https://zmk.dev/">ZMK firmware</a>,
             supporting both a LiPo battery and a pair of CR2032 coin cell
             batteries.
-          </p>
-        </Work>
-        <Work
-          title="Dash"
-          src="dash.jpeg"
-          alt="Picture of a Dash, showing temperature, humidity, and CO2 ppm data on its e-paper display"
-          links={dashData.links}
-        >
-          <p>
-            An air quality monitor with an e-paper display, measuring
-            temperature, humidity, and CO2 ppm. Uses a{' '}
-            <a href="https://sensirion.com/products/catalog/SCD40">SCD40</a> CO2
-            sensor and a{' '}
-            <a href="https://docs.m5stack.com/en/core/stamp_c3u">M5Stamp C3U</a>
-            .
-          </p>
-        </Work>
-        <Work
-          title="mizet"
-          src="mizet.jpeg"
-          alt="Picture of a mizet"
-          links={mizetData.links}
-        >
-          <p>
-            A small input device featuring an OLED display, a rotary encoder,
-            and buttons, capable of keyboard and mouse operations. Powered by an{' '}
-            <a href="https://www.raspberrypi.com/products/rp2040/">RP2040</a>,
-            developed with <a href="https://embassy.dev/">Embassy</a>.
           </p>
         </Work>
       </main>
